@@ -3,28 +3,596 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pizzeria Bella Napoli — pizza z pieca opalanego drewnem, Kraków</title>
-<meta name="description" content="Pizzeria Bella Napoli w Krakowie. Prawdziwa pizza neapolitańska z pieca opalanego drewnem. Świeże włoskie składniki, tradycyjne receptury. Zamów lub odwiedź nas przy ul. Krakowskiej 24.">
-<meta name="keywords" content="pizzeria Kraków, pizza z pieca, pizza neapolitańska, włoska pizza Kraków, dostawa pizzy Kraków, Bella Napoli, ul. Krakowska">
+<title>Pizzeria Bella Napoli — autentyczna pizza w Krakowie</title>
+<meta name="description" content="Rodzinna pizzeria w Krakowie z piecem opalanym drewnem. Świeże włoskie składniki, tradycyjne przepisy. Dine-in i dostawa. Krakowska 24. Zadzwoń: 601 112 233">
+<meta name="keywords" content="pizzeria Kraków, pizza Kraków, pizza z pieca, restauracja włoska Kraków, dostawa pizzy Kraków, Bella Napoli">
 <meta name="robots" content="index, follow">
-<meta property="og:title" content="Pizzeria Bella Napoli — pizza z pieca opalanego drewnem, Kraków">
-<meta property="og:description" content="Prawdziwa pizza neapolitańska z pieca opalanego drewnem. Świeże włoskie składniki, tradycyjne receptury. Kraków, ul. Krakowska 24.">
+<meta property="og:title" content="Pizzeria Bella Napoli — autentyczna pizza w Krakowie">
+<meta property="og:description" content="Rodzinna pizzeria z piecem opalanym drewnem. Świeże włoskie składniki, tradycyjne przepisy. Krakowska 24, Kraków.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pl_PL">
 <meta property="og:site_name" content="Pizzeria Bella Napoli">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Pizzeria Bella Napoli — pizza z pieca opalanego drewnem, Kraków">
-<meta name="twitter:description" content="Prawdziwa pizza neapolitańska z pieca opalanego drewnem. Świeże włoskie składniki, tradycyjne receptury.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48' fill='%23c8102e'/><path d='M30 45 Q50 30 70 45 Q75 55 70 65 Q50 80 30 65 Q25 55 30 45' fill='%23ffd700' stroke='%23fff' stroke-width='2'/></svg>">
+<meta name="twitter:title" content="Pizzeria Bella Napoli — autentyczna pizza w Krakowie">
+<meta name="twitter:description" content="Rodzinna pizzeria z piecem opalanym drewnem. Świeże włoskie składniki, tradycyjne przepisy.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🍕</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+--brand: #C8102E;
+--brand-contrast: #FFFFFF;
+--bg: #FFFEF9;
+--surface: #FFFFFF;
+--text: #1A1A1A;
+--muted: #6B6B6B;
+--accent: #2E7D32;
+--warm: #FFF8E7;
+--font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+--font-display: 'Playfair Display', Georgia, serif;
+--radius: 4px;
+--shadow: 0 2px 8px rgba(0,0,0,0.08);
+--shadow-lg: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+font-family: var(--font);
+background: var(--bg);
+color: var(--text);
+line-height: 1.6;
+-webkit-font-smoothing: antialiased;
+}
+
+.skip-link {
+position: absolute;
+top: -40px;
+left: 0;
+background: var(--brand);
+color: var(--brand-contrast);
+padding: 8px 16px;
+text-decoration: none;
+z-index: 10000;
+border-radius: 0 0 var(--radius) 0;
+font-weight: 600;
+}
+
+.skip-link:focus {
+top: 0;
+outline: 3px solid var(--accent);
+outline-offset: 2px;
+}
+
+header {
+position: sticky;
+top: 0;
+background: var(--surface);
+box-shadow: var(--shadow);
+z-index: 1000;
+}
+
+.header-inner {
+max-width: 1280px;
+margin: 0 auto;
+padding: 16px 24px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo {
+font-family: var(--font-display);
+font-size: 1.5rem;
+font-weight: 700;
+color: var(--brand);
+text-decoration: none;
+display: flex;
+align-items: center;
+gap: 8px;
+}
+
+.logo svg {
+width: 32px;
+height: 32px;
+flex-shrink: 0;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 32px;
+align-items: center;
+}
+
+nav a {
+text-decoration: none;
+color: var(--text);
+font-weight: 500;
+font-size: 0.9375rem;
+transition: color 0.2s;
+}
+
+nav a:hover,
+nav a:focus-visible {
+color: var(--brand);
+outline: none;
+}
+
+nav a:focus-visible {
+outline: 2px solid var(--brand);
+outline-offset: 4px;
+border-radius: 2px;
+}
+
+.menu-toggle {
+display: none;
+background: none;
+border: none;
+cursor: pointer;
+padding: 8px;
+}
+
+.menu-toggle span {
+display: block;
+width: 24px;
+height: 2px;
+background: var(--text);
+margin: 5px 0;
+transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+.menu-toggle {
+display: block;
+}
+nav {
+position: absolute;
+top: 100%;
+left: 0;
+right: 0;
+background: var(--surface);
+box-shadow: var(--shadow-lg);
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s ease;
+}
+nav.active {
+max-height: 400px;
+}
+nav ul {
+flex-direction: column;
+padding: 16px 24px;
+gap: 16px;
+align-items: flex-start;
+}
+}
+
+.hero {
+position: relative;
+min-height: 600px;
+display: flex;
+align-items: center;
+overflow: hidden;
+background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+}
+
+.hero-image {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+opacity: 0.4;
+}
+
+.hero-content {
+position: relative;
+max-width: 1280px;
+margin: 0 auto;
+padding: 80px 24px;
+color: white;
+z-index: 1;
+}
+
+.hero h1 {
+font-family: var(--font-display);
+font-size: clamp(2.5rem, 6vw, 4.5rem);
+font-weight: 700;
+line-height: 1.1;
+margin-bottom: 24px;
+text-shadow: 0 2px 12px rgba(0,0,0,0.4);
+}
+
+.hero-subtitle {
+font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+margin-bottom: 40px;
+max-width: 600px;
+color: rgba(255,255,255,0.95);
+font-weight: 400;
+}
+
+.cta-group {
+display: flex;
+gap: 16px;
+flex-wrap: wrap;
+}
+
+.btn {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+padding: 16px 32px;
+font-size: 1rem;
+font-weight: 600;
+text-decoration: none;
+border-radius: var(--radius);
+transition: all 0.2s;
+min-height: 44px;
+justify-content: center;
+border: none;
+cursor: pointer;
+font-family: var(--font);
+}
+
+.btn-primary {
+background: var(--brand);
+color: var(--brand-contrast);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+background: #A00D24;
+transform: translateY(-1px);
+box-shadow: 0 4px 12px rgba(200,16,46,0.3);
+}
+
+.btn-secondary {
+background: var(--surface);
+color: var(--text);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+background: #f5f5f5;
+}
+
+.btn:focus-visible {
+outline: 3px solid var(--accent);
+outline-offset: 2px;
+}
+
+main {
+max-width: 1280px;
+margin: 0 auto;
+}
+
+section {
+padding: 80px 24px;
+}
+
+.section-header {
+text-align: center;
+margin-bottom: 64px;
+}
+
+.section-header h2 {
+font-family: var(--font-display);
+font-size: clamp(2rem, 4vw, 3rem);
+font-weight: 700;
+color: var(--text);
+margin-bottom: 16px;
+}
+
+.section-header p {
+font-size: 1.125rem;
+color: var(--muted);
+max-width: 640px;
+margin: 0 auto;
+}
+
+.about {
+background: var(--warm);
+}
+
+.about-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 64px;
+align-items: center;
+}
+
+.about-text h2 {
+font-family: var(--font-display);
+font-size: clamp(2rem, 4vw, 2.75rem);
+font-weight: 700;
+margin-bottom: 24px;
+}
+
+.about-text p {
+font-size: 1.125rem;
+line-height: 1.8;
+color: var(--muted);
+margin-bottom: 16px;
+}
+
+.about-image {
+position: relative;
+border-radius: var(--radius);
+overflow: hidden;
+box-shadow: var(--shadow-lg);
+aspect-ratio: 4/3;
+}
+
+.about-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+@media (max-width: 768px) {
+.about-content {
+grid-template-columns: 1fr;
+gap: 32px;
+}
+.about-image {
+order: -1;
+}
+}
+
+.menu-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 32px;
+}
+
+.menu-item {
+background: var(--surface);
+border-radius: var(--radius);
+padding: 32px;
+box-shadow: var(--shadow);
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-item:hover {
+transform: translateY(-4px);
+box-shadow: var(--shadow-lg);
+}
+
+.menu-item-header {
+display: flex;
+justify-content: space-between;
+align-items: baseline;
+margin-bottom: 12px;
+gap: 16px;
+}
+
+.menu-item h3 {
+font-family: var(--font-display);
+font-size: 1.5rem;
+font-weight: 600;
+color: var(--text);
+}
+
+.menu-item-price {
+font-size: 1.25rem;
+font-weight: 700;
+color: var(--brand);
+white-space: nowrap;
+}
+
+.menu-item p {
+color: var(--muted);
+line-height: 1.6;
+}
+
+.reviews {
+background: var(--warm);
+}
+
+.reviews-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 32px;
+margin-top: 48px;
+}
+
+.review-card {
+background: var(--surface);
+padding: 32px;
+border-radius: var(--radius);
+box-shadow: var(--shadow);
+}
+
+.review-stars {
+color: #FFA500;
+font-size: 1.25rem;
+margin-bottom: 16px;
+letter-spacing: 2px;
+}
+
+.review-text {
+font-size: 1.0625rem;
+line-height: 1.7;
+color: var(--text);
+margin-bottom: 16px;
+font-style: italic;
+}
+
+.review-author {
+font-weight: 600;
+color: var(--muted);
+font-size: 0.9375rem;
+}
+
+.rating-summary {
+text-align: center;
+margin-bottom: 48px;
+padding: 32px;
+background: var(--surface);
+border-radius: var(--radius);
+box-shadow: var(--shadow);
+}
+
+.rating-number {
+font-size: 3.5rem;
+font-weight: 700;
+color: var(--brand);
+font-family: var(--font-display);
+line-height: 1;
+}
+
+.rating-stars {
+font-size: 2rem;
+color: #FFA500;
+margin: 8px 0;
+letter-spacing: 4px;
+}
+
+.rating-count {
+color: var(--muted);
+font-size: 1.125rem;
+}
+
+.contact-wrapper {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 64px;
+align-items: start;
+}
+
+.contact-info h2 {
+font-family: var(--font-display);
+font-size: clamp(2rem, 4vw, 2.75rem);
+font-weight: 700;
+margin-bottom: 32px;
+}
+
+.contact-item {
+display: flex;
+gap: 16px;
+margin-bottom: 24px;
+align-items: flex-start;
+}
+
+.contact-icon {
+width: 24px;
+height: 24px;
+flex-shrink: 0;
+color: var(--brand);
+margin-top: 2px;
+}
+
+.contact-details h3 {
+font-weight: 600;
+font-size: 1.125rem;
+margin-bottom: 4px;
+color: var(--text);
+}
+
+.contact-details p,
+.contact-details a {
+color: var(--muted);
+text-decoration: none;
+line-height: 1.6;
+}
+
+.contact-details a:hover,
+.contact-details a:focus-visible {
+color: var(--brand);
+text-decoration: underline;
+}
+
+.contact-details a:focus-visible {
+outline: 2px solid var(--brand);
+outline-offset: 2px;
+border-radius: 2px;
+}
+
+.hours-list {
+list-style: none;
+}
+
+.hours-list li {
+display: flex;
+justify-content: space-between;
+padding: 8px 0;
+border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.hours-list li:last-child {
+border-bottom: none;
+}
+
+.map-container {
+border-radius: var(--radius);
+overflow: hidden;
+box-shadow: var(--shadow-lg);
+height: 380px;
+}
+
+.map-container iframe {
+width: 100%;
+height: 100%;
+border: 0;
+display: block;
+}
+
+.map-link {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+margin-top: 16px;
+color: var(--brand);
+text-decoration: none;
+font-weight: 600;
+}
+
+.map-link:hover,
+.map-link:focus-visible {
+text-decoration: underline;
+}
+
+.map-link:focus-visible {
+outline: 2px solid var(--brand);
+outline-offset: 2px;
+border-radius: 2px;
+}
+
+@media (max-width: 968px) {
+.contact-wrapper {
+grid-template-columns: 1fr;
+gap: 48px;
+}
+}
+
+@media (prefers-reduced-motion: reduce) {
+*,
+*::before,
+*::after {
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: 0.01ms !important;
+}
+}
+
+*:focus-visible {
+outline: 2px solid var(--brand);
+outline-offset: 2px;
+}
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Restaurant",
   "name": "Pizzeria Bella Napoli",
-  "description": "Rodzinna pizzeria z piecem opalanym drewnem, świeże włoskie składniki.",
+  "description": "Rodzinna pizzeria z piecem opalanym drewnem, świeże włoskie składniki",
   "telephone": "+48601112233",
   "address": {
     "@type": "PostalAddress",
@@ -34,23 +602,18 @@
     "addressCountry": "PL"
   },
   "areaServed": "Kraków",
-  "priceRange": "25-55 zł",
   "servesCuisine": "Włoska",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "214"
-  },
+  "priceRange": "$$",
   "openingHoursSpecification": [
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"],
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
       "opens": "12:00",
       "closes": "22:00"
     },
     {
       "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Friday","Saturday"],
+      "dayOfWeek": ["Friday", "Saturday"],
       "opens": "12:00",
       "closes": "23:00"
     },
@@ -60,729 +623,14 @@
       "opens": "13:00",
       "closes": "21:00"
     }
-  ]
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "214"
+  }
 }
 </script>
-<style>
-:root {
-  --brand: #c8102e;
-  --brand-contrast: #fff;
-  --bg: #fefdfb;
-  --surface: #fff;
-  --text: #1a1a1a;
-  --muted: #666;
-  --font: 'Inter', sans-serif;
-  --radius: 4px;
-  --display: 'Bebas Neue', sans-serif;
-  --accent: #ffd700;
-  --green: #009246;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
-body {
-  font-family: var(--font);
-  color: var(--text);
-  background: var(--bg);
-  line-height: 1.6;
-  -webkit-font-smoothing: antialiased;
-}
-
-.skip-link {
-  position: absolute;
-  top: -40px;
-  left: 0;
-  background: var(--brand);
-  color: var(--brand-contrast);
-  padding: 8px 16px;
-  text-decoration: none;
-  z-index: 10000;
-  font-weight: 600;
-}
-
-.skip-link:focus {
-  top: 0;
-}
-
-header {
-  position: sticky;
-  top: 0;
-  background: var(--surface);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-  z-index: 1000;
-}
-
-.header-inner {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 70px;
-}
-
-.logo {
-  font-family: var(--display);
-  font-size: 28px;
-  letter-spacing: 1px;
-  color: var(--brand);
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.logo svg {
-  width: 32px;
-  height: 32px;
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 32px;
-  align-items: center;
-}
-
-nav a {
-  text-decoration: none;
-  color: var(--text);
-  font-weight: 500;
-  font-size: 15px;
-  transition: color 0.2s;
-}
-
-nav a:hover,
-nav a:focus-visible {
-  color: var(--brand);
-  outline: none;
-}
-
-nav a:focus-visible {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 4px;
-}
-
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 8px;
-  z-index: 1001;
-}
-
-.menu-toggle span {
-  display: block;
-  width: 26px;
-  height: 2px;
-  background: var(--text);
-  margin: 6px 0;
-  transition: 0.3s;
-}
-
-.cta-header {
-  background: var(--brand);
-  color: var(--brand-contrast);
-  padding: 10px 20px;
-  border-radius: var(--radius);
-  font-weight: 600;
-  text-decoration: none;
-  transition: transform 0.2s, box-shadow 0.2s;
-  display: inline-block;
-  min-width: 44px;
-  min-height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cta-header:hover,
-.cta-header:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(200,16,46,0.3);
-  outline: 2px solid var(--brand);
-  outline-offset: 2px;
-}
-
-main {
-  overflow-x: hidden;
-}
-
-section {
-  padding: 80px 20px;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.hero {
-  background: linear-gradient(135deg, var(--brand) 0%, #a00d25 100%);
-  color: var(--brand-contrast);
-  padding: 120px 20px 100px;
-  position: relative;
-  overflow: hidden;
-}
-
-.hero::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -10%;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(255,215,0,0.15) 0%, transparent 70%);
-  border-radius: 50%;
-  pointer-events: none;
-}
-
-.hero-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-}
-
-.hero-text h1 {
-  font-family: var(--display);
-  font-size: 68px;
-  line-height: 1;
-  letter-spacing: 2px;
-  margin-bottom: 16px;
-  text-transform: uppercase;
-}
-
-.hero-text .subtitle {
-  font-size: 20px;
-  margin-bottom: 32px;
-  opacity: 0.95;
-  font-weight: 500;
-}
-
-.hero-cta {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.btn {
-  padding: 14px 32px;
-  font-size: 16px;
-  font-weight: 600;
-  border-radius: var(--radius);
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s;
-  min-width: 44px;
-  min-height: 44px;
-  cursor: pointer;
-  border: none;
-  font-family: var(--font);
-}
-
-.btn-primary {
-  background: var(--brand-contrast);
-  color: var(--brand);
-}
-
-.btn-primary:hover,
-.btn-primary:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
-  outline: 2px solid var(--brand-contrast);
-  outline-offset: 2px;
-}
-
-.btn-secondary {
-  background: transparent;
-  color: var(--brand-contrast);
-  border: 2px solid var(--brand-contrast);
-}
-
-.btn-secondary:hover,
-.btn-secondary:focus-visible {
-  background: rgba(255,255,255,0.1);
-  outline: 2px solid var(--brand-contrast);
-  outline-offset: 2px;
-}
-
-.hero-visual {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pizza-illustration {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  filter: drop-shadow(0 8px 24px rgba(0,0,0,0.3));
-}
-
-.section-header {
-  text-align: center;
-  margin-bottom: 60px;
-}
-
-.section-header h2 {
-  font-family: var(--display);
-  font-size: 48px;
-  letter-spacing: 1px;
-  color: var(--brand);
-  margin-bottom: 12px;
-  text-transform: uppercase;
-}
-
-.section-header p {
-  font-size: 18px;
-  color: var(--muted);
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.about-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-  align-items: center;
-}
-
-.about-text p {
-  font-size: 17px;
-  line-height: 1.7;
-  margin-bottom: 20px;
-}
-
-.about-features {
-  display: grid;
-  gap: 20px;
-}
-
-.feature-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  padding: 20px;
-  background: var(--surface);
-  border-radius: var(--radius);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
-
-.feature-icon {
-  flex-shrink: 0;
-  width: 48px;
-  height: 48px;
-  background: linear-gradient(135deg, var(--brand), #a00d25);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.feature-icon svg {
-  width: 24px;
-  height: 24px;
-}
-
-.feature-item h3 {
-  font-size: 18px;
-  margin-bottom: 4px;
-  color: var(--brand);
-}
-
-.feature-item p {
-  font-size: 15px;
-  color: var(--muted);
-  margin: 0;
-}
-
-.menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 32px;
-}
-
-.menu-item {
-  background: var(--surface);
-  border-radius: var(--radius);
-  padding: 32px 24px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  transition: transform 0.2s, box-shadow 0.2s;
-  border-top: 4px solid var(--brand);
-}
-
-.menu-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-}
-
-.menu-item h3 {
-  font-family: var(--display);
-  font-size: 26px;
-  letter-spacing: 0.5px;
-  margin-bottom: 8px;
-  color: var(--brand);
-}
-
-.menu-item .price {
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--green);
-  margin-bottom: 12px;
-  display: block;
-}
-
-.menu-item p {
-  font-size: 15px;
-  color: var(--muted);
-  line-height: 1.6;
-}
-
-.reviews {
-  background: linear-gradient(to bottom, var(--bg) 0%, #f5f3f0 100%);
-}
-
-.rating-summary {
-  text-align: center;
-  margin-bottom: 48px;
-}
-
-.stars {
-  display: inline-flex;
-  gap: 4px;
-  font-size: 32px;
-  color: var(--accent);
-  margin-bottom: 8px;
-}
-
-.rating-summary p {
-  font-size: 18px;
-  color: var(--muted);
-}
-
-.rating-summary strong {
-  color: var(--text);
-  font-size: 20px;
-}
-
-.reviews-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 32px;
-}
-
-.review-card {
-  background: var(--surface);
-  padding: 28px;
-  border-radius: var(--radius);
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-  position: relative;
-}
-
-.review-card::before {
-  content: '"';
-  position: absolute;
-  top: 16px;
-  left: 20px;
-  font-size: 64px;
-  color: var(--accent);
-  opacity: 0.3;
-  font-family: Georgia, serif;
-  line-height: 1;
-}
-
-.review-stars {
-  color: var(--accent);
-  font-size: 18px;
-  margin-bottom: 12px;
-  letter-spacing: 2px;
-}
-
-.review-card p {
-  font-size: 16px;
-  line-height: 1.6;
-  margin-bottom: 16px;
-  font-style: italic;
-  position: relative;
-  z-index: 1;
-}
-
-.review-author {
-  font-weight: 600;
-  color: var(--brand);
-  font-style: normal;
-}
-
-.contact-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 60px;
-}
-
-.contact-info h3 {
-  font-family: var(--display);
-  font-size: 32px;
-  color: var(--brand);
-  margin-bottom: 24px;
-  letter-spacing: 0.5px;
-}
-
-.info-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  margin-bottom: 24px;
-  padding: 16px;
-  background: var(--surface);
-  border-radius: var(--radius);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-}
-
-.info-icon {
-  flex-shrink: 0;
-  width: 44px;
-  height: 44px;
-  background: var(--brand);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.info-icon svg {
-  width: 22px;
-  height: 22px;
-}
-
-.info-item strong {
-  display: block;
-  margin-bottom: 4px;
-  color: var(--brand);
-  font-size: 15px;
-}
-
-.info-item a {
-  color: var(--text);
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: 600;
-  transition: color 0.2s;
-}
-
-.info-item a:hover,
-.info-item a:focus-visible {
-  color: var(--brand);
-  outline: 2px solid var(--brand);
-  outline-offset: 2px;
-  border-radius: 2px;
-}
-
-.info-item p {
-  font-size: 15px;
-  line-height: 1.6;
-  margin: 0;
-}
-
-.hours-list {
-  list-style: none;
-  font-size: 15px;
-  line-height: 1.8;
-}
-
-.hours-list li {
-  display: flex;
-  justify-content: space-between;
-  padding: 6px 0;
-  border-bottom: 1px solid rgba(0,0,0,0.06);
-}
-
-.hours-list li:last-child {
-  border-bottom: none;
-}
-
-.map-container {
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-  height: 100%;
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-}
-
-.map-container iframe {
-  width: 100%;
-  flex: 1;
-  border: 0;
-  min-height: 350px;
-}
-
-.map-link {
-  display: block;
-  text-align: center;
-  padding: 12px;
-  background: var(--brand);
-  color: var(--brand-contrast);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 15px;
-  transition: background 0.2s;
-}
-
-.map-link:hover,
-.map-link:focus-visible {
-  background: #a00d25;
-  outline: 2px solid var(--brand);
-  outline-offset: -2px;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  nav {
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
-    background: var(--surface);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s;
-  }
-
-  nav.active {
-    max-height: 400px;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 0;
-    padding: 16px 0;
-  }
-
-  nav li {
-    width: 100%;
-  }
-
-  nav a {
-    display: block;
-    padding: 14px 20px;
-    font-size: 16px;
-  }
-
-  .cta-header {
-    margin: 8px 20px;
-  }
-
-  section {
-    padding: 60px 20px;
-  }
-
-  .hero {
-    padding: 80px 20px 60px;
-  }
-
-  .hero-content {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .hero-text h1 {
-    font-size: 48px;
-  }
-
-  .hero-text .subtitle {
-    font-size: 18px;
-  }
-
-  .hero-visual {
-    order: -1;
-  }
-
-  .pizza-illustration {
-    max-width: 280px;
-  }
-
-  .section-header h2 {
-    font-size: 36px;
-  }
-
-  .about-content,
-  .contact-wrapper {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .menu-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .reviews-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero-text h1 {
-    font-size: 38px;
-  }
-
-  .hero-cta {
-    flex-direction: column;
-  }
-
-  .btn {
-    width: 100%;
-  }
-
-  .section-header h2 {
-    font-size: 32px;
-  }
-}
-
-*:focus-visible {
-  outline: 2px solid var(--brand);
-  outline-offset: 2px;
-}
-
-button:focus-visible,
-a:focus-visible {
-  outline: 2px solid var(--brand);
-  outline-offset: 2px;
-}
-</style>
 <style>
 /* websource: blok prawny (RODO + cookies) — styl dziedziczy zmienne :root strony */
 .ws-legal-footer{background:var(--surface,#0f0f12);color:var(--muted,#9aa0a6);font-family:var(--font,system-ui,-apple-system,Segoe UI,Roboto,sans-serif);padding:28px 20px;display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;justify-content:space-between;border-top:1px solid rgba(127,127,127,.18);font-size:14px}
@@ -821,289 +669,213 @@ a:focus-visible {
 <a href="#main" class="skip-link">Przejdź do treści</a>
 
 <header>
-  <div class="header-inner">
-    <a href="#hero" class="logo" aria-label="Pizzeria Bella Napoli — strona główna">
-      <svg viewBox="0 0 100 100" aria-hidden="true">
-        <circle cx="50" cy="50" r="48" fill="#c8102e"/>
-        <path d="M30 45 Q50 30 70 45 Q75 55 70 65 Q50 80 30 65 Q25 55 30 45" fill="#ffd700" stroke="#fff" stroke-width="2"/>
-      </svg>
-      <span>Bella Napoli</span>
-    </a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
-    <nav id="main-nav">
-      <ul>
-        <li><a href="#o-nas">O nas</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#opinie">Opinie</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-        <li><a href="tel:+48601112233" class="cta-header">Zadzwoń</a></li>
-      </ul>
-    </nav>
-  </div>
+<div class="header-inner">
+<a href="#" class="logo" aria-label="Pizzeria Bella Napoli — strona główna">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+<circle cx="12" cy="12" r="2" fill="currentColor"/>
+<path d="M12 8l-2 4h4l-2-4zm-3 8l1.5-3H9l-1.5 3h1.5zm6 0l-1.5-3H15l1.5 3H15z"/>
+</svg>
+Bella Napoli
+</a>
+<button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Otwórz menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav id="main-nav">
+<ul>
+<li><a href="#o-nas">O nas</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#opinie">Opinie</a></li>
+<li><a href="#kontakt">Kontakt</a></li>
+</ul>
+</nav>
+</div>
 </header>
 
 <main id="main">
-  <section id="hero" class="hero">
-    <div class="hero-content">
-      <div class="hero-text">
-        <h1>Prawdziwa pizza z Neapolu</h1>
-        <p class="subtitle">Piec opalany drewnem, świeże włoskie składniki, tradycyjna receptura — smak, który przeniesie Cię do Włoch.</p>
-        <div class="hero-cta">
-          <a href="tel:+48601112233" class="btn btn-primary">Zadzwoń i zamów: 601 112 233</a>
-          <a href="#menu" class="btn btn-secondary">Zobacz menu</a>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <svg class="pizza-illustration" viewBox="0 0 400 400" aria-labelledby="pizza-title">
-          <title id="pizza-title">Ilustracja pizzy neapolitańskiej</title>
-          <defs>
-            <radialGradient id="dough" cx="50%" cy="50%">
-              <stop offset="0%" style="stop-color:#f4d19b;stop-opacity:1" />
-              <stop offset="100%" style="stop-color:#d4a574;stop-opacity:1" />
-            </radialGradient>
-            <radialGradient id="sauce" cx="50%" cy="50%">
-              <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
-              <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
-            </radialGradient>
-          </defs>
-          <circle cx="200" cy="200" r="180" fill="url(#dough)" stroke="#c89b6a" stroke-width="4"/>
-          <circle cx="200" cy="200" r="160" fill="url(#sauce)"/>
-          <ellipse cx="160" cy="160" rx="35" ry="30" fill="#fff9e6" opacity="0.9"/>
-          <ellipse cx="240" cy="180" rx="40" ry="32" fill="#fff9e6" opacity="0.9"/>
-          <ellipse cx="200" cy="240" rx="38" ry="28" fill="#fff9e6" opacity="0.9"/>
-          <ellipse cx="140" cy="230" rx="30" ry="26" fill="#fff9e6" opacity="0.9"/>
-          <ellipse cx="260" cy="240" rx="32" ry="30" fill="#fff9e6" opacity="0.9"/>
-          <circle cx="180" cy="200" r="12" fill="#8b4513"/>
-          <circle cx="220" cy="210" r="10" fill="#8b4513"/>
-          <circle cx="200" cy="170" r="11" fill="#8b4513"/>
-          <circle cx="240" cy="220" r="9" fill="#8b4513"/>
-          <path d="M170 150 Q175 145 180 150 L185 155 Q180 160 175 155 Z" fill="#228b22"/>
-          <path d="M230 200 Q235 195 240 200 L245 205 Q240 210 235 205 Z" fill="#228b22"/>
-          <path d="M190 260 Q195 255 200 260 L205 265 Q200 270 195 265 Z" fill="#228b22"/>
-        </svg>
-      </div>
-    </div>
-  </section>
+<section class="hero">
+<img src="/pizzeria-bella-napoli-krakow/hero.jpg" alt="Goście delektujący się pizzą w przytulnym wnętrzu restauracji" class="hero-image">
+<div class="hero-content">
+<h1>Prawdziwa pizza z Neapolu w sercu Krakowa</h1>
+<p class="hero-subtitle">Piec opalany drewnem, ciasto dojrzewające 48 godzin i świeże włoskie składniki — tak smakuje autentyczność.</p>
+<div class="cta-group">
+<a href="tel:+48601112233" class="btn btn-primary">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+Zadzwoń: 601 112 233
+</a>
+<a href="#menu" class="btn btn-secondary">Zobacz menu</a>
+</div>
+</div>
+</section>
 
-  <section id="o-nas">
-    <div class="container">
-      <div class="section-header">
-        <h2>Witamy w Bella Napoli</h2>
-        <p>Rodzinna pizzeria w sercu Krakowa</p>
-      </div>
-      <div class="about-content">
-        <div class="about-text">
-          <p>Bella Napoli to miejsce, gdzie tradycja spotyka się ze świeżością. Nasza pizza powstaje w autentycznym piecu opalanym drewnem, dzięki czemu każdy kawałek ma niepowtarzalny smak i chrupiące ciasto z delikatnie przyrumienionym brzegiem.</p>
-          <p>Używamy wyłącznie najlepszych włoskich składników — mąki tipo 00, świeżej mozzarelli di bufala, pomidorów San Marzano i oliwy extra vergine. Nasze ciasto dojrzewa przez 48 godzin, co nadaje mu wyjątkową lekkość i aromat.</p>
-          <p>Zapraszamy do lokalu przy ul. Krakowskiej 24 lub zamów pizzę z dostawą do domu — ten sam smak Neapolu, gdziekolwiek jesteś.</p>
-        </div>
-        <div class="about-features">
-          <div class="feature-item">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true">
-                <path d="M12 2 L15 8 L22 9 L17 14 L18 21 L12 18 L6 21 L7 14 L2 9 L9 8 Z"/>
-              </svg>
-            </div>
-            <div>
-              <h3>Piec opalany drewnem</h3>
-              <p>Temperatura 450°C i aromat dymu bukowego — tak powstaje prawdziwa pizza neapolitańska.</p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 6 L12 12 L16 14"/>
-              </svg>
-            </div>
-            <div>
-              <h3>48-godzinne dojrzewanie</h3>
-              <p>Ciasto fermentuje przez dwa dni — efekt to lekkość, chrupkość i niezapomniany smak.</p>
-            </div>
-          </div>
-          <div class="feature-item">
-            <div class="feature-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true">
-                <path d="M3 9 L12 2 L21 9 L21 20 L3 20 Z"/>
-                <path d="M9 22 L9 12 L15 12 L15 22"/>
-              </svg>
-            </div>
-            <div>
-              <h3>Włoskie składniki</h3>
-              <p>Mozzarella di bufala, pomidory San Marzano, oliwa z Kalabrii — importujemy to, co najlepsze.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<section id="o-nas" class="about">
+<div class="about-content">
+<div class="about-text">
+<h2>Rodzinna tradycja od trzech pokoleń</h2>
+<p>Bella Napoli to miejsce, gdzie przepisy przekazywane z pokolenia na pokolenie spotykają się z krakowską gościnnością. Nasz piec opalany drewnem bukowym osiąga temperaturę 485°C — dokładnie taką, która sprawia, że pizza wypiekana przez 90 sekund zyskuje chrupiące brzegi i miękkie, aromatyczne wnętrze.</p>
+<p>Mąkę sprowadzamy bezpośrednio z młyna w Kampanii, pomidory San Marzano dojrzewają na stokach Wezuwiusza, a mozzarella di bufala dociera do nas trzy razy w tygodniu. Nie ma skrótów — jest tylko czas, temperatura i szacunek dla surowca.</p>
+<p>Zapraszamy na miejsce lub zamawiamy z dowozem do domu. Każda pizza to ten sam standard, bez względu na to, gdzie ją zjesz.</p>
+</div>
+<div class="about-image">
+<img src="/pizzeria-bella-napoli-krakow/foto-1.jpg" alt="Elegancko podany stół z wykwintnymi daniami w restauracji" loading="lazy">
+</div>
+</div>
+</section>
 
-  <section id="menu">
-    <div class="container">
-      <div class="section-header">
-        <h2>Nasze pizze</h2>
-        <p>Każda pizza wypiekana na świeżo, prosto z pieca</p>
-      </div>
-      <div class="menu-grid">
-        <article class="menu-item">
-          <h3>Margherita</h3>
-          <span class="price">od 28 zł</span>
-          <p>Klasyka w najczystszej postaci — sos pomidorowy San Marzano, mozzarella fior di latte, świeża bazylia i oliwa. Prosta, ale doskonała.</p>
-        </article>
-        <article class="menu-item">
-          <h3>Diavola</h3>
-          <span class="price">od 35 zł</span>
-          <p>Dla miłośników ostrych wrażeń — pikantne salami piccante, mozzarella, sos pomidorowy i świeża papryczka chili. Ogień na talerzu.</p>
-        </article>
-        <article class="menu-item">
-          <h3>Quattro Formaggi</h3>
-          <span class="price">od 38 zł</span>
-          <p>Harmonia czterech serów — mozzarella, gorgonzola, parmezan i ricotta na bazie sosu śmietanowego. Kremowa rozkosz.</p>
-        </article>
-        <article class="menu-item">
-          <h3>Prosciutto e Funghi</h3>
-          <span class="price">od 36 zł</span>
-          <p>Szynka prosciutto cotto, świeże pieczarki, mozzarella i sos pomidorowy — włoski klasyk, który nigdy nie nudzi.</p>
-        </article>
-        <article class="menu-item">
-          <h3>Capricciosa</h3>
-          <span class="price">od 39 zł</span>
-          <p>Bogata kompozycja — szynka, pieczarki, karczochy, oliwki, mozzarella i sos pomidorowy. Pizza pełna smaków.</p>
-        </article>
-        <article class="menu-item">
-          <h3>Vegetariana</h3>
-          <span class="price">od 34 zł</span>
-          <p>Kolorowa i pełna witamin — świeże warzywa z grilla (cukinia, bakłażan, papryka), mozzarella, sos pomidorowy i rukola.</p>
-        </article>
-      </div>
-    </div>
-  </section>
+<section id="menu">
+<div class="section-header">
+<h2>Nasze pizze</h2>
+<p>Każda pizza wypiekana na świeżo w piecu opalanym drewnem — gotowa w 90 sekund</p>
+</div>
+<div class="menu-grid">
+<article class="menu-item">
+<div class="menu-item-header">
+<h3>Margherita</h3>
+<span class="menu-item-price">od 28 zł</span>
+</div>
+<p>Klasyka neapolitańska: sos pomidorowy San Marzano, mozzarella fior di latte, świeża bazylia, oliwa extra vergine. Prosta, doskonała.</p>
+</article>
+<article class="menu-item">
+<div class="menu-item-header">
+<h3>Diavola</h3>
+<span class="menu-item-price">od 36 zł</span>
+</div>
+<p>Dla lubiących ostre wrażenia: pikantne salami calabrese, mozzarella, sos pomidorowy, świeży czosnek, oliwa chili. Grzeje od środka.</p>
+</article>
+<article class="menu-item">
+<div class="menu-item-header">
+<h3>Quattro Formaggi</h3>
+<span class="menu-item-price">od 38 zł</span>
+</div>
+<p>Biała pizza dla miłośników sera: mozzarella, gorgonzola, parmigiano reggiano, taleggio. Kremowa, intensywna, niezapomniana.</p>
+</article>
+<article class="menu-item">
+<div class="menu-item-header">
+<h3>Prosciutto e Funghi</h3>
+<span class="menu-item-price">od 40 zł</span>
+</div>
+<p>Szynka parmeńska 18-miesięcznej dojrzałości, świeże pieczarki, mozzarella, sos pomidorowy. Połączenie, które zawsze działa.</p>
+</article>
+<article class="menu-item">
+<div class="menu-item-header">
+<h3>Capricciosa</h3>
+<span class="menu-item-price">od 42 zł</span>
+</div>
+<p>Bogata kompozycja: szynka, pieczarki, karczoch, oliwki, mozzarella, sos pomidorowy. Każdy kęs inny, każdy smaczny.</p>
+</article>
+<article class="menu-item">
+<div class="menu-item-header">
+<h3>Bufala e Rucola</h3>
+<span class="menu-item-price">od 46 zł</span>
+</div>
+<p>Mozzarella di bufala, świeża rukola, pomidorki koktajlowe, płatki parmezanu, oliwa truflowa. Lekka, aromatyczna, elegancka.</p>
+</article>
+</div>
+</section>
 
-  <section id="opinie" class="reviews">
-    <div class="container">
-      <div class="section-header">
-        <h2>Co mówią nasi goście</h2>
-      </div>
-      <div class="rating-summary">
-        <div class="stars" aria-label="Ocena 4.8 na 5 gwiazdek">★★★★★</div>
-        <p><strong>4.8 / 5</strong> na podstawie <strong>214 opinii</strong> w Google</p>
-      </div>
-      <div class="reviews-grid">
-        <article class="review-card">
-          <div class="review-stars" aria-label="5 gwiazdek">★★★★★</div>
-          <p>Najlepsza pizza w Krakowie, bez dwóch zdań. Ciasto chrupiące, składniki świeże, a obsługa bardzo miła. Wracamy tu regularnie i zawsze jest rewelacyjnie!</p>
-          <p class="review-author">— Anna Kowalska</p>
-        </article>
-        <article class="review-card">
-          <div class="review-stars" aria-label="5 gwiazdek">★★★★★</div>
-          <p>Piec opalany drewnem robi robotę — pizza ma ten autentyczny, wędzony smak. Diavola była idealna, dokładnie taka ostra jak lubię. Polecam każdemu!</p>
-          <p class="review-author">— Marek Nowak</p>
-        </article>
-        <article class="review-card">
-          <div class="review-stars" aria-label="5 gwiazdek">★★★★★</div>
-          <p>Czułam się jak we Włoszech. Margherita prosta, ale zrobiona perfekcyjnie — świeża bazylia, dobra mozzarella i sos, który smakuje jak prawdziwy. Wrócę na pewno.</p>
-          <p class="review-author">— Katarzyna Wiśniewska</p>
-        </article>
-      </div>
-    </div>
-  </section>
+<section id="opinie" class="reviews">
+<div class="section-header">
+<h2>Co mówią nasi goście</h2>
+</div>
+<div class="rating-summary">
+<div class="rating-number">4.8</div>
+<div class="rating-stars" aria-label="Ocena 4.8 na 5 gwiazdek">★★★★★</div>
+<div class="rating-count">Na podstawie 214 opinii w Google</div>
+</div>
+<div class="reviews-grid">
+<article class="review-card">
+<div class="review-stars" aria-label="5 gwiazdek">★★★★★</div>
+<p class="review-text">Najlepsza pizza w Krakowie, bez dwóch zdań. Ciasto chrupiące na brzegach, miękkie w środku, a składniki świeże i pełne smaku. Czuć, że robione z sercem. Wracam tu regularnie i za każdym razem wychodzę zadowolony.</p>
+<p class="review-author">— Marcin K.</p>
+</article>
+<article class="review-card">
+<div class="review-stars" aria-label="5 gwiazdek">★★★★★</div>
+<p class="review-text">Autentyczny smak Włoch w sercu Krakowa. Byłam w Neapolu i mogę śmiało powiedzieć, że Bella Napoli niczym się nie różni. Obsługa miła, atmosfera rodzinna, a pizza — wybitna. Polecam Margheritę, prosta i genialna.</p>
+<p class="review-author">— Anna W.</p>
+</article>
+<article class="review-card">
+<div class="review-stars" aria-label="5 gwiazdek">★★★★★</div>
+<p class="review-text">Zamawiam z dostawą od ponad roku i jakość zawsze na najwyższym poziomie. Pizza dociera ciepła, ciasto nie rozmiękczone, wszystko świeże. To moje ulubione miejsce na piątkowy wieczór z rodziną. Dziękuję!</p>
+<p class="review-author">— Tomasz P.</p>
+</article>
+</div>
+</section>
 
-  <section id="kontakt">
-    <div class="container">
-      <div class="section-header">
-        <h2>Kontakt</h2>
-        <p>Zamów lub odwiedź nas osobiście</p>
-      </div>
-      <div class="contact-wrapper">
-        <div class="contact-info">
-          <h3>Skontaktuj się z nami</h3>
-          <div class="info-item">
-            <div class="info-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-              </svg>
-            </div>
-            <div>
-              <strong>Telefon</strong>
-              <a href="tel:+48601112233">601 112 233</a>
-            </div>
-          </div>
-          <div class="info-item">
-            <div class="info-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-            </div>
-            <div>
-              <strong>Adres</strong>
-              <p>ul. Krakowska 24<br>30-001 Kraków</p>
-            </div>
-          </div>
-          <div class="info-item">
-            <div class="info-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <path d="M12 6v6l4 2"/>
-              </svg>
-            </div>
-            <div>
-              <strong>Godziny otwarcia</strong>
-              <ul class="hours-list">
-                <li><span>Poniedziałek–Czwartek</span> <span>12:00–22:00</span></li>
-                <li><span>Piątek–Sobota</span> <span>12:00–23:00</span></li>
-                <li><span>Niedziela</span> <span>13:00–21:00</span></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="map-container">
-          <iframe src="https://maps.google.com/maps?q=ul.+Krakowska+24%2C+30-001+Krak%C3%B3w&output=embed" loading="lazy" title="Mapa dojazdu — Pizzeria Bella Napoli, ul. Krakowska 24, Kraków" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          <a href="https://www.google.com/maps/search/?api=1&query=ul.+Krakowska+24%2C+30-001+Krak%C3%B3w" target="_blank" rel="noopener noreferrer" class="map-link">Otwórz w Google Maps</a>
-        </div>
-      </div>
-    </div>
-  </section>
+<section id="kontakt">
+<div class="section-header">
+<h2>Zapraszamy</h2>
+<p>Zadzwoń i zamów, albo wpadnij na miejscu — zawsze mamy dla Ciebie stolik</p>
+</div>
+<div class="contact-wrapper">
+<div class="contact-info">
+<div class="contact-item">
+<svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+<div class="contact-details">
+<h3>Telefon</h3>
+<p><a href="tel:+48601112233">601 112 233</a></p>
+</div>
+</div>
+<div class="contact-item">
+<svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+<div class="contact-details">
+<h3>Adres</h3>
+<p>ul. Krakowska 24<br>30-001 Kraków</p>
+</div>
+</div>
+<div class="contact-item">
+<svg class="contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+<div class="contact-details">
+<h3>Godziny otwarcia</h3>
+<ul class="hours-list">
+<li><span>Poniedziałek–Czwartek</span> <span>12:00–22:00</span></li>
+<li><span>Piątek–Sobota</span> <span>12:00–23:00</span></li>
+<li><span>Niedziela</span> <span>13:00–21:00</span></li>
+</ul>
+</div>
+</div>
+</div>
+<div>
+<div class="map-container">
+<iframe src="https://maps.google.com/maps?q=ul.+Krakowska+24%2C+30-001+Krak%C3%B3w&output=embed" loading="lazy" title="Mapa dojazdu — Pizzeria Bella Napoli, ul. Krakowska 24, Kraków" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<a href="https://www.google.com/maps/search/?api=1&query=ul.+Krakowska+24%2C+30-001+Krak%C3%B3w" target="_blank" rel="noopener noreferrer" class="map-link">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+Otwórz w Google Maps
+</a>
+</div>
+</div>
+</section>
 </main>
 
 <script>
 (function(){
-  'use strict';
-  var toggle = document.querySelector('.menu-toggle');
-  var nav = document.querySelector('#main-nav');
-  if (toggle && nav) {
-    toggle.addEventListener('click', function() {
-      var expanded = toggle.getAttribute('aria-expanded') === 'true';
-      toggle.setAttribute('aria-expanded', !expanded);
-      nav.classList.toggle('active');
-    });
-    var links = nav.querySelectorAll('a');
-    links.forEach(function(link) {
-      link.addEventListener('click', function() {
-        if (window.innerWidth <= 768) {
-          toggle.setAttribute('aria-expanded', 'false');
-          nav.classList.remove('active');
-        }
-      });
-    });
-  }
-  var anchors = document.querySelectorAll('a[href^="#"]');
-  anchors.forEach(function(anchor) {
-    anchor.addEventListener('click', function(e) {
-      var href = anchor.getAttribute('href');
-      if (href === '#' || !href) return;
-      var target = document.querySelector(href);
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        target.focus();
-      }
-    });
-  });
+const toggle=document.querySelector('.menu-toggle');
+const nav=document.querySelector('nav');
+if(toggle&&nav){
+toggle.addEventListener('click',function(){
+const expanded=this.getAttribute('aria-expanded')==='true';
+this.setAttribute('aria-expanded',!expanded);
+nav.classList.toggle('active');
+});
+}
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+anchor.addEventListener('click',function(e){
+const href=this.getAttribute('href');
+if(href==='#'){return;}
+e.preventDefault();
+const target=document.querySelector(href);
+if(target){
+if(nav&&nav.classList.contains('active')){
+nav.classList.remove('active');
+if(toggle){toggle.setAttribute('aria-expanded','false');}
+}
+target.scrollIntoView({behavior:'smooth',block:'start'});
+target.focus();
+}
+});
+});
 })();
 </script>
 <footer class="ws-legal-footer">
