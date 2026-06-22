@@ -1,0 +1,1171 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aldona. Zakład fryzjerski — Oborniki</title>
+<meta name="description" content="Profesjonalny salon fryzjerski w Obornikach. Strzyżenie, koloryzacja, stylizacja. Doświadczenie i indywidualny styl. Umów wizytę: 605 532 939.">
+<meta name="keywords" content="fryzjer Oborniki, salon fryzjerski Oborniki, strzyżenie damskie Oborniki, koloryzacja włosów Oborniki, fryzjer Armii Krajowej">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Aldona. Zakład fryzjerski — Oborniki">
+<meta property="og:description" content="Profesjonalny salon fryzjerski w Obornikach. Strzyżenie, koloryzacja, stylizacja. Doświadczenie i indywidualny styl.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Aldona. Zakład fryzjerski">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Aldona. Zakład fryzjerski — Oborniki">
+<meta name="twitter:description" content="Profesjonalny salon fryzjerski w Obornikach. Strzyżenie, koloryzacja, stylizacja.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>✂️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+--brand: #2d2d2d;
+--brand-contrast: #ffffff;
+--bg: #fafafa;
+--surface: #ffffff;
+--text: #1a1a1a;
+--muted: #6b6b6b;
+--accent: #b8956a;
+--font: 'Inter', sans-serif;
+--font-display: 'Cormorant', serif;
+--radius: 2px;
+}
+
+*, *::before, *::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+html {
+scroll-behavior: auto;
+}
+*, *::before, *::after {
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: 0.01ms !important;
+}
+}
+
+body {
+font-family: var(--font);
+font-size: 16px;
+line-height: 1.6;
+color: var(--text);
+background: var(--bg);
+-webkit-font-smoothing: antialiased;
+}
+
+.skip-link {
+position: absolute;
+top: -40px;
+left: 0;
+background: var(--brand);
+color: var(--brand-contrast);
+padding: 8px 16px;
+text-decoration: none;
+z-index: 100;
+}
+
+.skip-link:focus {
+top: 0;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+button {
+font-family: inherit;
+cursor: pointer;
+border: none;
+background: none;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 0 24px;
+}
+
+header {
+position: sticky;
+top: 0;
+background: rgba(250, 250, 250, 0.95);
+backdrop-filter: blur(10px);
+z-index: 50;
+border-bottom: 1px solid rgba(45, 45, 45, 0.1);
+}
+
+.header-content {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 16px 24px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.logo {
+font-family: var(--font-display);
+font-size: 24px;
+font-weight: 700;
+color: var(--text);
+letter-spacing: -0.02em;
+}
+
+nav ul {
+display: flex;
+gap: 32px;
+list-style: none;
+}
+
+nav a {
+font-size: 15px;
+font-weight: 500;
+color: var(--text);
+transition: color 0.2s;
+}
+
+nav a:hover,
+nav a:focus-visible {
+color: var(--accent);
+outline: none;
+}
+
+nav a:focus-visible {
+text-decoration: underline;
+text-decoration-thickness: 2px;
+text-underline-offset: 4px;
+}
+
+.menu-toggle {
+display: none;
+flex-direction: column;
+gap: 5px;
+padding: 8px;
+background: none;
+border: none;
+cursor: pointer;
+}
+
+.menu-toggle span {
+width: 24px;
+height: 2px;
+background: var(--text);
+transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+nav {
+position: absolute;
+top: 100%;
+left: 0;
+right: 0;
+background: var(--surface);
+border-bottom: 1px solid rgba(45, 45, 45, 0.1);
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s;
+}
+
+nav.active {
+max-height: 300px;
+}
+
+nav ul {
+flex-direction: column;
+gap: 0;
+padding: 16px 24px;
+}
+
+nav a {
+display: block;
+padding: 12px 0;
+}
+
+.menu-toggle {
+display: flex;
+}
+}
+
+.hero {
+position: relative;
+min-height: 600px;
+display: flex;
+align-items: center;
+overflow: hidden;
+}
+
+.hero-bg {
+position: absolute;
+inset: 0;
+z-index: 0;
+}
+
+.hero-bg img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.hero-bg::after {
+content: '';
+position: absolute;
+inset: 0;
+background: linear-gradient(135deg, rgba(45, 45, 45, 0.85) 0%, rgba(45, 45, 45, 0.6) 100%);
+}
+
+.hero-content {
+position: relative;
+z-index: 1;
+color: var(--brand-contrast);
+max-width: 640px;
+}
+
+.hero-badge {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+background: rgba(184, 149, 106, 0.2);
+border: 1px solid var(--accent);
+padding: 8px 16px;
+border-radius: var(--radius);
+font-size: 14px;
+font-weight: 500;
+margin-bottom: 24px;
+color: var(--accent);
+}
+
+.hero h1 {
+font-family: var(--font-display);
+font-size: 56px;
+font-weight: 700;
+line-height: 1.1;
+margin-bottom: 20px;
+letter-spacing: -0.02em;
+}
+
+.hero-subtitle {
+font-size: 20px;
+line-height: 1.5;
+margin-bottom: 32px;
+opacity: 0.95;
+}
+
+.hero-cta {
+display: flex;
+gap: 16px;
+flex-wrap: wrap;
+}
+
+.btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+padding: 14px 28px;
+font-size: 16px;
+font-weight: 600;
+border-radius: var(--radius);
+transition: all 0.2s;
+min-width: 160px;
+min-height: 44px;
+}
+
+.btn-primary {
+background: var(--accent);
+color: var(--brand-contrast);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+background: #a07d55;
+transform: translateY(-1px);
+box-shadow: 0 4px 12px rgba(184, 149, 106, 0.3);
+outline: 2px solid var(--accent);
+outline-offset: 2px;
+}
+
+.btn-secondary {
+background: rgba(255, 255, 255, 0.15);
+color: var(--brand-contrast);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+background: rgba(255, 255, 255, 0.25);
+outline: 2px solid var(--brand-contrast);
+outline-offset: 2px;
+}
+
+@media (max-width: 768px) {
+.hero {
+min-height: 500px;
+}
+
+.hero h1 {
+font-size: 40px;
+}
+
+.hero-subtitle {
+font-size: 18px;
+}
+
+.hero-cta {
+flex-direction: column;
+}
+
+.btn {
+width: 100%;
+}
+}
+
+section {
+padding: 80px 0;
+}
+
+.section-header {
+text-align: center;
+max-width: 720px;
+margin: 0 auto 56px;
+}
+
+.section-eyebrow {
+font-size: 14px;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+color: var(--accent);
+margin-bottom: 12px;
+}
+
+.section-title {
+font-family: var(--font-display);
+font-size: 42px;
+font-weight: 700;
+line-height: 1.2;
+color: var(--text);
+margin-bottom: 16px;
+letter-spacing: -0.02em;
+}
+
+.section-description {
+font-size: 18px;
+color: var(--muted);
+line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+section {
+padding: 60px 0;
+}
+
+.section-title {
+font-size: 32px;
+}
+
+.section-description {
+font-size: 16px;
+}
+}
+
+.about {
+background: var(--surface);
+}
+
+.about-content {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 64px;
+align-items: center;
+}
+
+.about-text h2 {
+font-family: var(--font-display);
+font-size: 38px;
+font-weight: 700;
+line-height: 1.2;
+margin-bottom: 24px;
+letter-spacing: -0.02em;
+}
+
+.about-text p {
+font-size: 17px;
+line-height: 1.7;
+color: var(--muted);
+margin-bottom: 16px;
+}
+
+.about-image {
+position: relative;
+border-radius: var(--radius);
+overflow: hidden;
+box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.about-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+aspect-ratio: 4/3;
+}
+
+@media (max-width: 968px) {
+.about-content {
+grid-template-columns: 1fr;
+gap: 40px;
+}
+
+.about-text h2 {
+font-size: 32px;
+}
+}
+
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 32px;
+}
+
+.service-card {
+background: var(--surface);
+padding: 32px;
+border-radius: var(--radius);
+border: 1px solid rgba(45, 45, 45, 0.08);
+transition: all 0.3s;
+}
+
+.service-card:hover {
+transform: translateY(-4px);
+box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+border-color: var(--accent);
+}
+
+.service-icon {
+width: 48px;
+height: 48px;
+background: linear-gradient(135deg, var(--accent) 0%, #9d7550 100%);
+border-radius: var(--radius);
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 20px;
+}
+
+.service-icon svg {
+width: 24px;
+height: 24px;
+fill: var(--brand-contrast);
+}
+
+.service-card h3 {
+font-family: var(--font-display);
+font-size: 24px;
+font-weight: 600;
+margin-bottom: 12px;
+color: var(--text);
+}
+
+.service-card p {
+font-size: 15px;
+line-height: 1.6;
+color: var(--muted);
+margin-bottom: 16px;
+}
+
+.service-price {
+font-size: 20px;
+font-weight: 600;
+color: var(--accent);
+}
+
+.reviews {
+background: var(--surface);
+}
+
+.reviews-header {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 16px;
+margin-bottom: 48px;
+}
+
+.rating-display {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.stars {
+display: flex;
+gap: 4px;
+}
+
+.star {
+width: 24px;
+height: 24px;
+}
+
+.rating-text {
+font-size: 18px;
+font-weight: 600;
+color: var(--text);
+}
+
+.rating-count {
+font-size: 15px;
+color: var(--muted);
+}
+
+.reviews-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 32px;
+}
+
+.review-card {
+background: var(--bg);
+padding: 32px;
+border-radius: var(--radius);
+border: 1px solid rgba(45, 45, 45, 0.08);
+}
+
+.review-stars {
+display: flex;
+gap: 4px;
+margin-bottom: 16px;
+}
+
+.review-stars .star {
+width: 18px;
+height: 18px;
+}
+
+.review-text {
+font-size: 16px;
+line-height: 1.6;
+color: var(--text);
+margin-bottom: 20px;
+font-style: italic;
+}
+
+.review-author {
+font-size: 15px;
+font-weight: 600;
+color: var(--text);
+}
+
+.contact {
+background: var(--surface);
+}
+
+.contact-wrapper {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 64px;
+}
+
+.contact-info h2 {
+font-family: var(--font-display);
+font-size: 38px;
+font-weight: 700;
+margin-bottom: 32px;
+letter-spacing: -0.02em;
+}
+
+.info-item {
+display: flex;
+gap: 20px;
+margin-bottom: 28px;
+align-items: flex-start;
+}
+
+.info-icon {
+width: 44px;
+height: 44px;
+min-width: 44px;
+background: var(--accent);
+border-radius: var(--radius);
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.info-icon svg {
+width: 22px;
+height: 22px;
+fill: var(--brand-contrast);
+}
+
+.info-content h3 {
+font-size: 15px;
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 0.05em;
+color: var(--muted);
+margin-bottom: 6px;
+}
+
+.info-content p,
+.info-content a {
+font-size: 17px;
+line-height: 1.5;
+color: var(--text);
+}
+
+.info-content a:hover,
+.info-content a:focus-visible {
+color: var(--accent);
+outline: 2px solid var(--accent);
+outline-offset: 2px;
+border-radius: var(--radius);
+}
+
+.hours-list {
+list-style: none;
+}
+
+.hours-list li {
+display: flex;
+justify-content: space-between;
+padding: 8px 0;
+border-bottom: 1px solid rgba(45, 45, 45, 0.08);
+}
+
+.map-container {
+position: relative;
+border-radius: var(--radius);
+overflow: hidden;
+box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+width: 100%;
+height: 380px;
+border: 0;
+display: block;
+}
+
+.map-link {
+display: inline-block;
+margin-top: 16px;
+color: var(--accent);
+font-weight: 500;
+text-decoration: underline;
+}
+
+.map-link:hover,
+.map-link:focus-visible {
+color: var(--text);
+outline: 2px solid var(--accent);
+outline-offset: 2px;
+border-radius: var(--radius);
+}
+
+@media (max-width: 968px) {
+.contact-wrapper {
+grid-template-columns: 1fr;
+gap: 48px;
+}
+
+.contact-info h2 {
+font-size: 32px;
+}
+}
+
+*:focus-visible {
+outline: 2px solid var(--accent);
+outline-offset: 2px;
+}
+</style>
+<style>
+/* websource: blok prawny (RODO + cookies) — styl dziedziczy zmienne :root strony */
+.ws-legal-footer{background:var(--surface,#0f0f12);color:var(--muted,#9aa0a6);font-family:var(--font,system-ui,-apple-system,Segoe UI,Roboto,sans-serif);padding:28px 20px;display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;justify-content:space-between;border-top:1px solid rgba(127,127,127,.18);font-size:14px}
+.ws-legal-footer .ws-legal-copy{margin:0}
+.ws-legal-links{display:flex;flex-wrap:wrap;gap:18px}
+.ws-legal-links a{color:var(--muted,#9aa0a6);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s,color .15s}
+.ws-legal-links a:hover{color:var(--brand,#4f8cff)}
+.ws-legal-links a:focus-visible,.ws-legal-footer a:focus-visible{outline:2px solid var(--brand,#4f8cff);outline-offset:3px;border-radius:3px}
+.ws-legal-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.55);backdrop-filter:blur(2px)}
+.ws-legal-modal[hidden]{display:none}
+.ws-legal-dialog{background:var(--surface,#fff);color:var(--text,#16181d);font-family:var(--font,system-ui,-apple-system,Segoe UI,Roboto,sans-serif);max-width:760px;width:100%;max-height:86vh;overflow:auto;border-radius:var(--radius,14px);padding:32px clamp(20px,4vw,40px);box-shadow:0 24px 60px rgba(0,0,0,.4);outline:none}
+.ws-legal-dialog h2{margin:0 0 6px;font-size:clamp(20px,3vw,26px);color:var(--text,#16181d)}
+.ws-legal-dialog h3{margin:22px 0 6px;font-size:16px;color:var(--text,#16181d)}
+.ws-legal-dialog p,.ws-legal-dialog li{font-size:14.5px;line-height:1.65;color:var(--muted,#5a5f66)}
+.ws-legal-dialog ul{margin:6px 0;padding-left:20px}
+.ws-legal-dialog a{color:var(--brand,#2563eb)}
+.ws-legal-dialog .ws-legal-updated{font-size:12.5px;opacity:.7;margin-top:24px}
+.ws-legal-close{position:sticky;top:0;float:right;margin:-12px -10px 0 0;background:transparent;border:0;font-size:26px;line-height:1;cursor:pointer;color:var(--muted,#5a5f66);padding:6px 10px;border-radius:8px;min-width:44px;min-height:44px}
+.ws-legal-close:hover{color:var(--brand,#2563eb)}
+.ws-legal-close:focus-visible{outline:2px solid var(--brand,#2563eb);outline-offset:2px}
+.ws-cookie-banner{position:fixed;left:16px;right:16px;bottom:16px;z-index:9998;margin:0 auto;max-width:880px;background:var(--surface,#16181d);color:var(--text,#f4f5f7);font-family:var(--font,system-ui,-apple-system,Segoe UI,Roboto,sans-serif);border:1px solid rgba(127,127,127,.22);border-radius:var(--radius,14px);box-shadow:0 16px 44px rgba(0,0,0,.38);padding:18px 20px;display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;justify-content:space-between}
+.ws-cookie-banner[hidden]{display:none}
+.ws-cookie-text{margin:0;font-size:13.5px;line-height:1.55;color:var(--muted,#c4c8ce);flex:1 1 320px}
+.ws-cookie-text a{color:var(--brand,#4f8cff)}
+.ws-cookie-actions{display:flex;gap:10px;flex-wrap:wrap}
+.ws-btn{font:inherit;font-size:14px;font-weight:600;cursor:pointer;border-radius:var(--radius,10px);padding:11px 18px;min-height:44px;border:1px solid transparent;transition:transform .1s,opacity .15s}
+.ws-btn:active{transform:translateY(1px)}
+.ws-btn:focus-visible{outline:2px solid var(--brand,#4f8cff);outline-offset:2px}
+.ws-btn-primary{background:var(--brand,#4f8cff);color:var(--brand-contrast,#fff)}
+.ws-btn-ghost{background:transparent;color:var(--text,#f4f5f7);border-color:rgba(127,127,127,.35)}
+@media (max-width:560px){.ws-cookie-actions{width:100%}.ws-btn{flex:1 1 auto}}
+@media (prefers-reduced-motion:reduce){.ws-legal-links a,.ws-btn{transition:none}}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Przejdź do treści</a>
+
+<header>
+<div class="header-content">
+<div class="logo">Aldona</div>
+<button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav id="main-nav">
+<ul>
+<li><a href="#o-nas">O nas</a></li>
+<li><a href="#uslugi">Usługi</a></li>
+<li><a href="#opinie">Opinie</a></li>
+<li><a href="#kontakt">Kontakt</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main id="main">
+<section class="hero">
+<div class="hero-bg">
+<img src="/aldona-zaklad-fryzjerski-spychala-a-oborniki/hero.jpg" alt="Wnętrze salonu fryzjerskiego Aldona w Obornikach">
+</div>
+<div class="container">
+<div class="hero-content">
+<div class="hero-badge">
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+4.9 — Oborniki
+</div>
+<h1>Twoje włosy zasługują na profesjonalną opiekę</h1>
+<p class="hero-subtitle">Salon fryzjerski z doświadczeniem. Strzyżenie, koloryzacja i stylizacja dopasowane do Ciebie. Armii Krajowej 9, Oborniki.</p>
+<div class="hero-cta">
+<a href="tel:+48605532939" class="btn btn-primary">
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+Zadzwoń: 605 532 939
+</a>
+<a href="#uslugi" class="btn btn-secondary">Zobacz usługi</a>
+</div>
+</div>
+</div>
+</section>
+
+<section id="o-nas" class="about">
+<div class="container">
+<div class="about-content">
+<div class="about-text">
+<h2>Fryzjerstwo to nasza pasja</h2>
+<p>Salon Aldona to miejsce, w którym łączymy wieloletnie doświadczenie z troską o każdy szczegół. Specjalizujemy się w strzyżeniu damskim i męskim, koloryzacji oraz stylizacji dopasowanej do Twojego stylu życia.</p>
+<p>Pracujemy na profesjonalnych kosmetykach, które dbają o kondycję włosów. Każda wizyta to czas dla Ciebie — w komfortowym wnętrzu, z indywidualnym podejściem.</p>
+<p>Zapraszamy do salonu przy ulicy Armii Krajowej 9 w Obornikach. Umów wizytę telefonicznie.</p>
+</div>
+<div class="about-image">
+<img src="/aldona-zaklad-fryzjerski-spychala-a-oborniki/foto-1.jpg" alt="Nowoczesne wnętrze salonu fryzjerskiego Aldona" loading="lazy">
+</div>
+</div>
+</div>
+</section>
+
+<section id="uslugi">
+<div class="container">
+<div class="section-header">
+<div class="section-eyebrow">Oferta</div>
+<h2 class="section-title">Usługi fryzjerskie</h2>
+<p class="section-description">Kompleksowa pielęgnacja włosów — od strzyżenia po koloryzację. Ceny dostosowane do zakresu usługi.</p>
+</div>
+<div class="services-grid">
+<div class="service-card">
+<div class="service-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.87 2.24l-7.47 8.33c-.74.83-.26 2.16.87 2.41l1.73.38-1.73 9.64 7.47-8.33c.74-.83.26-2.16-.87-2.41l-1.73-.38 1.73-9.64z"/></svg>
+</div>
+<h3>Strzyżenie damskie</h3>
+<p>Cięcie dopasowane do kształtu twarzy i struktury włosów. Konsultacja, mycie, strzyżenie i stylizacja.</p>
+<div class="service-price">od 60 zł</div>
+</div>
+
+<div class="service-card">
+<div class="service-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+</div>
+<h3>Strzyżenie męskie</h3>
+<p>Precyzyjne cięcie maszynką i nożyczkami. Modelowanie brody i wąsów. Mycie i stylizacja.</p>
+<div class="service-price">od 45 zł</div>
+</div>
+
+<div class="service-card">
+<div class="service-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+</div>
+<h3>Koloryzacja</h3>
+<p>Farbowanie całościowe, pasemka, baleyage. Profesjonalne kosmetyki chroniące włosy podczas zabiegu.</p>
+<div class="service-price">od 120 zł</div>
+</div>
+
+<div class="service-card">
+<div class="service-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.5 6c-2.61.7-5.67 1-8.5 1s-5.89-.3-8.5-1L3 8c1.86.5 4 .83 6 1v13h2v-6h2v6h2V9c2-.17 4.14-.5 6-1l-.5-2zM12 6c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"/></svg>
+</div>
+<h3>Stylizacja okolicznościowa</h3>
+<p>Upięcia na wesele, studniówkę, komunię. Trwałe fryzury wykonane z dbałością o szczegóły.</p>
+<div class="service-price">od 80 zł</div>
+</div>
+
+<div class="service-card">
+<div class="service-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+</div>
+<h3>Pielęgnacja włosów</h3>
+<p>Regenerujące maski, odżywki, keratynowe zabiegi wzmacniające. Poprawa kondycji i blasku.</p>
+<div class="service-price">od 50 zł</div>
+</div>
+
+<div class="service-card">
+<div class="service-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 11.75c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zm6 0c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8 0-.29.02-.58.05-.86 2.36-1.05 4.23-2.98 5.21-5.37C11.07 8.33 14.05 10 17.42 10c.78 0 1.53-.09 2.25-.26.21.71.33 1.47.33 2.26 0 4.41-3.59 8-8 8z"/></svg>
+</div>
+<h3>Strzyżenie dziecięce</h3>
+<p>Spokojne i cierpliwe podejście do najmłodszych klientów. Pierwsze cięcie to dla nas wyjątkowy moment.</p>
+<div class="service-price">od 35 zł</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="opinie" class="reviews">
+<div class="container">
+<div class="section-header">
+<div class="section-eyebrow">Opinie</div>
+<h2 class="section-title">Co mówią klienci</h2>
+</div>
+<div class="reviews-header">
+<div class="rating-display">
+<div class="stars" aria-label="Ocena 4.9 na 5">
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+</div>
+<div>
+<div class="rating-text">4.9/5</div>
+<div class="rating-count">na podstawie 15 opinii</div>
+</div>
+</div>
+</div>
+<div class="reviews-grid">
+<div class="review-card">
+<div class="review-stars" aria-label="5 gwiazdek">
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+</div>
+<p class="review-text">Najlepszy fryzjer w Obornikach! Pani Aldona zawsze wie, co zrobić z moimi włosami. Wychodzę zadowolona po każdej wizycie. Polecam serdecznie!</p>
+<div class="review-author">— Magdalena</div>
+</div>
+
+<div class="review-card">
+<div class="review-stars" aria-label="5 gwiazdek">
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+</div>
+<p class="review-text">Profesjonalna obsługa, miła atmosfera i świetny efekt. Strzyżenie męskie wykonane perfekcyjnie. Ceny przystępne. Z czystym sumieniem polecam.</p>
+<div class="review-author">— Tomasz</div>
+</div>
+
+<div class="review-card">
+<div class="review-stars" aria-label="5 gwiazdek">
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fbbf24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+</div>
+<p class="review-text">Chodzę do tego salonu od lat i jestem bardzo zadowolona. Pani Aldona to prawdziwy profesjonalista. Zawsze doradzi i wykona fryzurę idealnie.</p>
+<div class="review-author">— Anna</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="kontakt" class="contact">
+<div class="container">
+<div class="section-header">
+<div class="section-eyebrow">Kontakt</div>
+<h2 class="section-title">Umów wizytę</h2>
+<p class="section-description">Zapraszamy do salonu w Obornikach. Najłatwiej umówić się telefonicznie.</p>
+</div>
+<div class="contact-wrapper">
+<div class="contact-info">
+<h2>Skontaktuj się z nami</h2>
+<div class="info-item">
+<div class="info-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+</div>
+<div class="info-content">
+<h3>Telefon</h3>
+<p><a href="tel:+48605532939">605 532 939</a></p>
+</div>
+</div>
+
+<div class="info-item">
+<div class="info-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+</div>
+<div class="info-content">
+<h3>Adres</h3>
+<p>Armii Krajowej 9<br>64-600 Oborniki</p>
+</div>
+</div>
+
+<div class="info-item">
+<div class="info-icon">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+</div>
+<div class="info-content">
+<h3>Godziny otwarcia</h3>
+<ul class="hours-list">
+<li><span>Poniedziałek – Piątek</span> <span>9:00 – 17:00</span></li>
+<li><span>Sobota</span> <span>9:00 – 14:00</span></li>
+<li><span>Niedziela</span> <span>Zamknięte</span></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div>
+<div class="map-container">
+<iframe src="https://maps.google.com/maps?q=Armii+Krajowej+9%2C+64-600+Oborniki%2C+Polska&output=embed" loading="lazy" title="Mapa dojazdu — Aldona. Zakład fryzjerski. Spychała A." referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<a href="https://www.google.com/maps/search/?api=1&query=Armii+Krajowej+9%2C+64-600+Oborniki%2C+Polska" target="_blank" rel="noopener noreferrer" class="map-link">Otwórz w Google Maps</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HairSalon",
+  "name": "Aldona. Zakład fryzjerski. Spychała A.",
+  "description": "Profesjonalny salon fryzjerski w Obornikach. Strzyżenie damskie i męskie, koloryzacja, stylizacja.",
+  "telephone": "+48605532939",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Armii Krajowej 9",
+    "addressLocality": "Oborniki",
+    "postalCode": "64-600",
+    "addressCountry": "PL"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Oborniki"
+  },
+  "priceRange": "35 zł - 120 zł",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "14:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "reviewCount": "15"
+  }
+}
+</script>
+
+<script>
+(function() {
+  'use strict';
+  
+  const menuToggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('nav');
+  
+  if (menuToggle && nav) {
+    menuToggle.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !isExpanded);
+      nav.classList.toggle('active');
+    });
+    
+    document.addEventListener('click', function(e) {
+      if (!menuToggle.contains(e.target) && !nav.contains(e.target)) {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        nav.classList.remove('active');
+      }
+    });
+    
+    const navLinks = nav.querySelectorAll('a');
+    navLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        menuToggle.setAttribute('aria-expanded', 'false');
+        nav.classList.remove('active');
+      });
+    });
+  }
+  
+  const links = document.querySelectorAll('a[href^="#"]');
+  links.forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        e.preventDefault();
+        targetElement.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+})();
+</script>
+<footer class="ws-legal-footer">
+  <p class="ws-legal-copy">&copy; 2026 Aldona. Zakład fryzjerski. Spychała A.. Wszelkie prawa zastrzeżone.</p>
+  <nav class="ws-legal-links" aria-label="Informacje prawne">
+    <a href="#" data-ws-open="ws-privacy">Polityka prywatności</a>
+    <a href="#" data-ws-open="ws-cookies">Polityka cookies</a>
+  </nav>
+</footer>
+<div class="ws-legal-modal" id="ws-privacy" role="dialog" aria-modal="true" aria-labelledby="ws-privacy-title" hidden>
+  <div class="ws-legal-dialog" tabindex="-1">
+    <button type="button" class="ws-legal-close" data-ws-close aria-label="Zamknij">&times;</button>
+    <h2 id="ws-privacy-title">Polityka prywatności</h2>
+    <p>Niniejsza polityka opisuje zasady przetwarzania danych osobowych osób, które kontaktują się z firmą <strong>Aldona. Zakład fryzjerski. Spychała A.</strong>, zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO).</p>
+
+    <h3>1. Administrator danych</h3>
+    <p>Administratorem danych osobowych jest Aldona. Zakład fryzjerski. Spychała A., Armii Krajowej 9, 64-600 Oborniki, Polska (tel. <a href="tel:+48605532939">+48605532939</a>).</p>
+
+    <h3>2. Zakres i cel przetwarzania</h3>
+    <p>Przetwarzamy dane, które przekazują nam Państwo dobrowolnie podczas kontaktu (np. imię, numer telefonu oraz treść zapytania). Dane wykorzystujemy wyłącznie w celu udzielenia odpowiedzi na zapytanie, przedstawienia oferty oraz obsługi sprawy, której zapytanie dotyczy.</p>
+
+    <h3>3. Podstawa prawna</h3>
+    <p>Podstawą przetwarzania jest art. 6 ust. 1 lit. a RODO (zgoda wyrażona poprzez kontakt) oraz art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes administratora polegający na obsłudze zapytań i prowadzeniu korespondencji).</p>
+
+    <h3>4. Dobrowolność podania danych</h3>
+    <p>Podanie danych jest dobrowolne, jednak niezbędne do nawiązania kontaktu i udzielenia odpowiedzi.</p>
+
+    <h3>5. Okres przechowywania</h3>
+    <p>Dane przechowujemy przez czas niezbędny do obsługi zapytania i prowadzenia korespondencji, a po jego zakończeniu — do czasu przedawnienia ewentualnych roszczeń lub do momentu wycofania zgody.</p>
+
+    <h3>6. Odbiorcy danych i mapa Google</h3>
+    <p>Dane przekazane nam bezpośrednio (np. w rozmowie telefonicznej) nie są sprzedawane ani udostępniane podmiotom trzecim w celach marketingowych; mogą być powierzone wyłącznie podmiotom wspierającym działanie firmy (np. dostawcy hostingu) na podstawie umów powierzenia.</p>
+    <p>Strona zawiera osadzoną mapę dojazdu dostarczaną przez Google (Google Ireland Limited). Po jej załadowaniu Google, jako niezależny administrator, może przetwarzać dane techniczne (np. adres IP) zgodnie z <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">polityką prywatności Google</a>, w tym poza Europejskim Obszarem Gospodarczym na podstawie odpowiednich zabezpieczeń.</p>
+
+    <h3>7. Prawa osoby, której dane dotyczą</h3>
+    <p>Przysługuje Państwu prawo do:</p>
+    <ul>
+      <li>dostępu do danych oraz otrzymania ich kopii,</li>
+      <li>sprostowania (poprawienia) danych,</li>
+      <li>usunięcia danych,</li>
+      <li>ograniczenia przetwarzania,</li>
+      <li>wniesienia sprzeciwu wobec przetwarzania,</li>
+      <li>przenoszenia danych,</li>
+      <li>wycofania zgody w dowolnym momencie (bez wpływu na zgodność z prawem przetwarzania sprzed wycofania),</li>
+      <li>wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa).</li>
+    </ul>
+
+    <h3>8. Zautomatyzowane decyzje i profilowanie</h3>
+    <p>Dane nie są wykorzystywane do zautomatyzowanego podejmowania decyzji ani do profilowania.</p>
+
+    <h3>9. Pliki cookies</h3>
+    <p>Zasady korzystania z plików cookies opisuje odrębna <a href="#" data-ws-open="ws-cookies">Polityka cookies</a>.</p>
+  </div>
+</div>
+<div class="ws-legal-modal" id="ws-cookies" role="dialog" aria-modal="true" aria-labelledby="ws-cookies-title" hidden>
+  <div class="ws-legal-dialog" tabindex="-1">
+    <button type="button" class="ws-legal-close" data-ws-close aria-label="Zamknij">&times;</button>
+    <h2 id="ws-cookies-title">Polityka cookies</h2>
+    <p>Niniejsza strona firmy <strong>Aldona. Zakład fryzjerski. Spychała A.</strong> korzysta z plików cookies oraz pamięci lokalnej przeglądarki w ograniczonym, niezbędnym zakresie.</p>
+
+    <h3>1. Czym są pliki cookies</h3>
+    <p>Pliki cookies to niewielkie informacje tekstowe zapisywane przez przeglądarkę na urządzeniu użytkownika. Mogą być odczytywane przy kolejnych odwiedzinach strony.</p>
+
+    <h3>2. Pliki własne</h3>
+    <p>Stosujemy wyłącznie <strong>niezbędne i funkcjonalne</strong> mechanizmy własne — w pamięci lokalnej (localStorage) zapisujemy jedynie informację o Państwa decyzji dotyczącej zgody, aby nie wyświetlać komunikatu ponownie. Nie używamy własnych plików cookies analitycznych ani marketingowych i nie śledzimy aktywności użytkowników.</p>
+
+    <h3>3. Mapa Google (treści podmiotu trzeciego)</h3>
+    <p>W sekcji kontaktowej osadzona jest mapa dojazdu dostarczana przez Google (usługa Google Maps). Po jej załadowaniu Google może zapisywać własne pliki cookies i przetwarzać dane (np. adres IP) zgodnie z <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">polityką prywatności Google</a>. Nie mamy wpływu na te pliki — można nimi zarządzać w ustawieniach przeglądarki.</p>
+
+    <h3>4. Zarządzanie cookies</h3>
+    <p>W każdej chwili mogą Państwo zarządzać plikami cookies i pamięcią lokalną z poziomu ustawień przeglądarki — w tym je przeglądać, blokować lub usuwać. Sposób różni się w zależności od przeglądarki (Chrome, Firefox, Safari, Edge); odpowiednie instrukcje znajdują się w jej dokumentacji.</p>
+
+    <h3>5. Wycofanie zgody</h3>
+    <p>Wyczyszczenie danych witryny w przeglądarce usunie zapamiętaną decyzję — komunikat o zgodzie pojawi się przy kolejnej wizycie.</p>
+  </div>
+</div>
+<div class="ws-cookie-banner" id="ws-cookie-banner" role="dialog" aria-live="polite" aria-label="Informacja o plikach cookies">
+  <p class="ws-cookie-text">Ta strona zapisuje niezbędne dane techniczne, aby zapamiętać Twoją decyzję, oraz osadza mapę Google (która może używać własnych cookies). Nie stosujemy własnych cookies analitycznych ani marketingowych. Szczegóły w <a href="#" data-ws-open="ws-cookies">Polityce cookies</a>.</p>
+  <div class="ws-cookie-actions">
+    <button type="button" class="ws-btn ws-btn-ghost" data-ws-consent="essential">Tylko niezbędne</button>
+    <button type="button" class="ws-btn ws-btn-primary" data-ws-consent="all">Akceptuję</button>
+  </div>
+</div>
+<script>
+(function(){
+  var KEY="ws-cookie-consent";
+  var banner=document.getElementById("ws-cookie-banner");
+  function dismiss(v){try{localStorage.setItem(KEY,v);}catch(e){}if(banner)banner.hidden=true;}
+  try{if(localStorage.getItem(KEY)&&banner)banner.hidden=true;}catch(e){}
+  document.querySelectorAll("[data-ws-consent]").forEach(function(b){
+    b.addEventListener("click",function(){dismiss(b.getAttribute("data-ws-consent"));});
+  });
+  var lastFocus=null;
+  function openModal(id){var m=document.getElementById(id);if(!m)return;lastFocus=document.activeElement;m.hidden=false;document.body.style.overflow="hidden";var d=m.querySelector(".ws-legal-dialog");if(d)d.focus();}
+  function closeModal(m){m.hidden=true;document.body.style.overflow="";if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+  document.querySelectorAll("[data-ws-open]").forEach(function(t){
+    t.addEventListener("click",function(e){e.preventDefault();openModal(t.getAttribute("data-ws-open"));});
+  });
+  document.querySelectorAll(".ws-legal-modal").forEach(function(m){
+    m.addEventListener("click",function(e){if(e.target===m)closeModal(m);});
+    m.querySelectorAll("[data-ws-close]").forEach(function(x){x.addEventListener("click",function(){closeModal(m);});});
+  });
+  document.addEventListener("keydown",function(e){
+    if(e.key==="Escape"){document.querySelectorAll(".ws-legal-modal").forEach(function(m){if(!m.hidden)closeModal(m);});}
+  });
+})();
+</script>
+</body>
+</html>
