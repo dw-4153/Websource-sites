@@ -1,0 +1,1244 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio Urody Glamour — salon kosmetyczny, Warszawa</title>
+<meta name="description" content="Profesjonalne zabiegi kosmetyczne w centrum Warszawy. Pielęgnacja twarzy, manicure hybrydowy, stylizacja rzęs. Umów wizytę w Studio Urody Glamour.">
+<meta name="keywords" content="salon kosmetyczny Warszawa, zabiegi na twarz Warszawa, manicure hybrydowy, stylizacja rzęs, kosmetyczka Warszawa">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Studio Urody Glamour — salon kosmetyczny, Warszawa">
+<meta property="og:description" content="Profesjonalne zabiegi kosmetyczne w centrum Warszawy. Pielęgnacja twarzy, manicure hybrydowy, stylizacja rzęs.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="Studio Urody Glamour">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Studio Urody Glamour — salon kosmetyczny, Warszawa">
+<meta name="twitter:description" content="Profesjonalne zabiegi kosmetyczne w centrum Warszawy. Pielęgnacja twarzy, manicure hybrydowy, stylizacja rzęs.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%23E8B4D9'/%3E%3Cpath d='M30 45 Q50 35 70 45 Q50 55 30 45' fill='white'/%3E%3Ccircle cx='40' cy='42' r='3' fill='%23333'/%3E%3Ccircle cx='60' cy='42' r='3' fill='%23333'/%3E%3Cpath d='M35 60 Q50 68 65 60' stroke='%23333' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+--brand: #E8B4D9;
+--brand-contrast: #1a1a1a;
+--bg: #FEFEFE;
+--surface: #FFFFFF;
+--text: #1a1a1a;
+--muted: #6b6b6b;
+--font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+--radius: 24px;
+--accent: #A8D5E2;
+}
+
+*, *::before, *::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+html { scroll-behavior: auto; }
+*, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
+
+body {
+font-family: var(--font);
+background: var(--bg);
+color: var(--text);
+line-height: 1.6;
+overflow-x: hidden;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+.skip-link {
+position: absolute;
+top: -100px;
+left: 10px;
+background: var(--brand);
+color: var(--brand-contrast);
+padding: 12px 20px;
+border-radius: var(--radius);
+font-weight: 500;
+z-index: 10000;
+}
+
+.skip-link:focus {
+top: 10px;
+outline: 3px solid var(--accent);
+outline-offset: 2px;
+}
+
+header {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background: rgba(254, 254, 254, 0.95);
+backdrop-filter: blur(12px);
+z-index: 1000;
+border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+nav {
+max-width: 1280px;
+margin: 0 auto;
+padding: 20px 24px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+font-family: 'Outfit', sans-serif;
+font-weight: 700;
+font-size: 22px;
+letter-spacing: -0.02em;
+color: var(--text);
+}
+
+.nav-links {
+display: flex;
+gap: 36px;
+list-style: none;
+align-items: center;
+}
+
+.nav-links a {
+font-weight: 500;
+font-size: 15px;
+transition: color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a:focus-visible {
+color: var(--brand);
+outline: none;
+}
+
+.nav-links a:focus-visible {
+text-decoration: underline;
+text-decoration-thickness: 2px;
+text-underline-offset: 4px;
+}
+
+.cta-nav {
+background: var(--brand);
+color: var(--brand-contrast);
+padding: 10px 24px;
+border-radius: 100px;
+font-weight: 500;
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta-nav:hover,
+.cta-nav:focus-visible {
+transform: translateY(-2px);
+box-shadow: 0 8px 20px rgba(232, 180, 217, 0.3);
+outline: none;
+}
+
+.menu-toggle {
+display: none;
+background: none;
+border: none;
+cursor: pointer;
+padding: 8px;
+min-width: 44px;
+min-height: 44px;
+}
+
+.menu-toggle span {
+display: block;
+width: 24px;
+height: 2px;
+background: var(--text);
+margin: 5px 0;
+transition: 0.3s;
+}
+
+main {
+margin-top: 76px;
+}
+
+section {
+padding: 120px 24px;
+max-width: 1280px;
+margin: 0 auto;
+}
+
+.hero {
+min-height: calc(100vh - 76px);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+position: relative;
+padding: 140px 24px 120px;
+background: 
+linear-gradient(135deg, rgba(232, 180, 217, 0.08) 0%, transparent 50%),
+linear-gradient(225deg, rgba(168, 213, 226, 0.06) 0%, transparent 50%);
+}
+
+.hero::before {
+content: '';
+position: absolute;
+width: 600px;
+height: 600px;
+top: -200px;
+right: -100px;
+background: radial-gradient(circle, rgba(232, 180, 217, 0.15) 0%, transparent 70%);
+border-radius: 50%;
+filter: blur(60px);
+pointer-events: none;
+z-index: 0;
+}
+
+.hero::after {
+content: '';
+position: absolute;
+width: 500px;
+height: 500px;
+bottom: -150px;
+left: -100px;
+background: radial-gradient(circle, rgba(168, 213, 226, 0.12) 0%, transparent 70%);
+border-radius: 50%;
+filter: blur(60px);
+pointer-events: none;
+z-index: 0;
+}
+
+.hero-content {
+position: relative;
+z-index: 1;
+max-width: 900px;
+}
+
+.hero-eyebrow {
+font-family: 'Outfit', sans-serif;
+font-weight: 500;
+font-size: 15px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: var(--muted);
+margin-bottom: 24px;
+}
+
+.hero h1 {
+font-family: 'Outfit', sans-serif;
+font-weight: 700;
+font-size: clamp(48px, 8vw, 96px);
+line-height: 1.05;
+letter-spacing: -0.03em;
+margin-bottom: 32px;
+background: linear-gradient(135deg, var(--text) 0%, var(--muted) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
+
+.hero-subtitle {
+font-size: clamp(18px, 2.5vw, 24px);
+color: var(--muted);
+margin-bottom: 48px;
+font-weight: 300;
+max-width: 600px;
+margin-left: auto;
+margin-right: auto;
+}
+
+.hero-cta {
+display: flex;
+gap: 20px;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+padding: 16px 40px;
+border-radius: 100px;
+font-weight: 500;
+font-size: 16px;
+min-width: 44px;
+min-height: 44px;
+transition: all 0.3s;
+border: none;
+cursor: pointer;
+text-align: center;
+}
+
+.btn-primary {
+background: var(--brand);
+color: var(--brand-contrast);
+box-shadow: 0 4px 16px rgba(232, 180, 217, 0.25);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+transform: translateY(-3px);
+box-shadow: 0 8px 24px rgba(232, 180, 217, 0.4);
+outline: none;
+}
+
+.btn-primary:focus-visible {
+outline: 3px solid var(--accent);
+outline-offset: 2px;
+}
+
+.btn-secondary {
+background: var(--surface);
+color: var(--text);
+border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+border-color: var(--brand);
+transform: translateY(-2px);
+outline: none;
+}
+
+.section-header {
+text-align: center;
+margin-bottom: 80px;
+}
+
+.section-tag {
+font-family: 'Outfit', sans-serif;
+font-weight: 500;
+font-size: 13px;
+letter-spacing: 0.12em;
+text-transform: uppercase;
+color: var(--brand);
+margin-bottom: 16px;
+}
+
+.section-header h2 {
+font-family: 'Outfit', sans-serif;
+font-weight: 700;
+font-size: clamp(36px, 5vw, 56px);
+line-height: 1.1;
+letter-spacing: -0.02em;
+margin-bottom: 20px;
+}
+
+.section-header p {
+font-size: 18px;
+color: var(--muted);
+max-width: 640px;
+margin: 0 auto;
+}
+
+.about {
+background: var(--surface);
+border-radius: var(--radius);
+padding: 100px 60px;
+position: relative;
+overflow: hidden;
+}
+
+.about::before {
+content: '';
+position: absolute;
+width: 400px;
+height: 400px;
+top: -100px;
+right: -100px;
+background: radial-gradient(circle, rgba(168, 213, 226, 0.1) 0%, transparent 70%);
+border-radius: 50%;
+filter: blur(40px);
+}
+
+.about-content {
+max-width: 800px;
+margin: 0 auto;
+position: relative;
+z-index: 1;
+}
+
+.about-content p {
+font-size: 18px;
+line-height: 1.8;
+margin-bottom: 24px;
+color: var(--text);
+}
+
+.about-content p:last-child {
+margin-bottom: 0;
+}
+
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 32px;
+}
+
+.service-card {
+background: var(--surface);
+border-radius: var(--radius);
+padding: 48px 36px;
+position: relative;
+overflow: hidden;
+border: 1px solid rgba(0, 0, 0, 0.05);
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 4px;
+background: linear-gradient(90deg, var(--brand) 0%, var(--accent) 100%);
+transform: scaleX(0);
+transform-origin: left;
+transition: transform 0.4s;
+}
+
+.service-card:hover,
+.service-card:focus-within {
+transform: translateY(-6px);
+box-shadow: 0 16px 40px rgba(0, 0, 0, 0.08);
+}
+
+.service-card:hover::before,
+.service-card:focus-within::before {
+transform: scaleX(1);
+}
+
+.service-icon {
+width: 64px;
+height: 64px;
+background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%);
+border-radius: 16px;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 24px;
+}
+
+.service-card h3 {
+font-family: 'Outfit', sans-serif;
+font-weight: 700;
+font-size: 24px;
+margin-bottom: 12px;
+letter-spacing: -0.01em;
+}
+
+.service-card p {
+color: var(--muted);
+margin-bottom: 20px;
+line-height: 1.7;
+}
+
+.service-price {
+font-family: 'Outfit', sans-serif;
+font-weight: 700;
+font-size: 20px;
+color: var(--brand);
+}
+
+.gallery {
+background: linear-gradient(180deg, var(--bg) 0%, var(--surface) 100%);
+}
+
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 24px;
+}
+
+.gallery-item {
+position: relative;
+border-radius: var(--radius);
+overflow: hidden;
+aspect-ratio: 4/3;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery-item:hover,
+.gallery-item:focus-within {
+transform: scale(1.02);
+box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+display: block;
+}
+
+.reviews {
+background: var(--surface);
+position: relative;
+}
+
+.reviews::before {
+content: '';
+position: absolute;
+width: 500px;
+height: 500px;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+background: radial-gradient(circle, rgba(232, 180, 217, 0.08) 0%, transparent 70%);
+border-radius: 50%;
+filter: blur(80px);
+pointer-events: none;
+}
+
+.rating-summary {
+text-align: center;
+margin-bottom: 60px;
+position: relative;
+z-index: 1;
+}
+
+.rating-number {
+font-family: 'Outfit', sans-serif;
+font-weight: 700;
+font-size: 72px;
+line-height: 1;
+background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+margin-bottom: 12px;
+}
+
+.stars {
+font-size: 32px;
+color: #FFD700;
+margin-bottom: 12px;
+letter-spacing: 4px;
+}
+
+.rating-count {
+color: var(--muted);
+font-size: 16px;
+}
+
+.reviews-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 32px;
+position: relative;
+z-index: 1;
+}
+
+.review-card {
+background: var(--bg);
+border-radius: var(--radius);
+padding: 40px 32px;
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+position: relative;
+}
+
+.review-card::before {
+content: '"';
+position: absolute;
+top: 20px;
+left: 20px;
+font-size: 80px;
+font-family: Georgia, serif;
+color: var(--brand);
+opacity: 0.2;
+line-height: 1;
+}
+
+.review-stars {
+color: #FFD700;
+font-size: 18px;
+margin-bottom: 16px;
+letter-spacing: 2px;
+}
+
+.review-text {
+font-size: 16px;
+line-height: 1.7;
+color: var(--text);
+margin-bottom: 20px;
+position: relative;
+z-index: 1;
+}
+
+.review-author {
+font-weight: 500;
+color: var(--text);
+}
+
+.contact {
+background: var(--bg);
+}
+
+.contact-wrapper {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 60px;
+align-items: start;
+}
+
+.contact-info h2 {
+font-family: 'Outfit', sans-serif;
+font-weight: 700;
+font-size: clamp(32px, 4vw, 48px);
+margin-bottom: 32px;
+letter-spacing: -0.02em;
+}
+
+.contact-details {
+display: flex;
+flex-direction: column;
+gap: 28px;
+}
+
+.contact-item {
+display: flex;
+align-items: start;
+gap: 20px;
+}
+
+.contact-icon {
+width: 48px;
+height: 48px;
+background: linear-gradient(135deg, var(--brand) 0%, var(--accent) 100%);
+border-radius: 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+}
+
+.contact-item-content h3 {
+font-family: 'Outfit', sans-serif;
+font-weight: 500;
+font-size: 14px;
+text-transform: uppercase;
+letter-spacing: 0.08em;
+color: var(--muted);
+margin-bottom: 6px;
+}
+
+.contact-item-content p,
+.contact-item-content a {
+font-size: 18px;
+font-weight: 500;
+color: var(--text);
+line-height: 1.6;
+}
+
+.contact-item-content a {
+transition: color 0.2s;
+}
+
+.contact-item-content a:hover,
+.contact-item-content a:focus-visible {
+color: var(--brand);
+outline: none;
+text-decoration: underline;
+}
+
+.hours-list {
+list-style: none;
+}
+
+.hours-list li {
+display: flex;
+justify-content: space-between;
+padding: 8px 0;
+border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.hours-list li:last-child {
+border-bottom: none;
+}
+
+.map-container {
+position: relative;
+border-radius: var(--radius);
+overflow: hidden;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+width: 100%;
+height: 380px;
+border: 0;
+display: block;
+}
+
+.map-link {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+margin-top: 16px;
+color: var(--brand);
+font-weight: 500;
+transition: gap 0.2s;
+}
+
+.map-link:hover,
+.map-link:focus-visible {
+gap: 12px;
+outline: none;
+text-decoration: underline;
+}
+
+@media (max-width: 968px) {
+.nav-links {
+position: fixed;
+top: 76px;
+left: 0;
+right: 0;
+background: var(--surface);
+flex-direction: column;
+padding: 32px 24px;
+gap: 24px;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+transform: translateY(-100%);
+opacity: 0;
+transition: transform 0.3s, opacity 0.3s;
+pointer-events: none;
+}
+
+.nav-links.active {
+transform: translateY(0);
+opacity: 1;
+pointer-events: all;
+}
+
+.menu-toggle {
+display: block;
+}
+
+.menu-toggle.active span:nth-child(1) {
+transform: rotate(45deg) translate(7px, 7px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.contact-wrapper {
+grid-template-columns: 1fr;
+gap: 48px;
+}
+}
+
+@media (max-width: 640px) {
+section {
+padding: 80px 20px;
+}
+
+.hero {
+padding: 100px 20px 80px;
+}
+
+.hero h1 {
+font-size: 42px;
+}
+
+.hero-cta {
+flex-direction: column;
+width: 100%;
+}
+
+.btn {
+width: 100%;
+}
+
+.about {
+padding: 60px 28px;
+}
+
+.section-header {
+margin-bottom: 48px;
+}
+
+.services-grid,
+.gallery-grid,
+.reviews-grid {
+grid-template-columns: 1fr;
+}
+
+.service-card {
+padding: 36px 28px;
+}
+}
+</style>
+<style>
+/* websource: blok prawny (RODO + cookies) — styl dziedziczy zmienne :root strony */
+.ws-legal-footer{background:var(--surface,#0f0f12);color:var(--muted,#9aa0a6);font-family:var(--font,system-ui,-apple-system,Segoe UI,Roboto,sans-serif);padding:28px 20px;display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;justify-content:space-between;border-top:1px solid rgba(127,127,127,.18);font-size:14px}
+.ws-legal-footer .ws-legal-copy{margin:0}
+.ws-legal-links{display:flex;flex-wrap:wrap;gap:18px}
+.ws-legal-links a{color:var(--muted,#9aa0a6);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s,color .15s}
+.ws-legal-links a:hover{color:var(--brand,#4f8cff)}
+.ws-legal-links a:focus-visible,.ws-legal-footer a:focus-visible{outline:2px solid var(--brand,#4f8cff);outline-offset:3px;border-radius:3px}
+.ws-legal-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.55);backdrop-filter:blur(2px)}
+.ws-legal-modal[hidden]{display:none}
+.ws-legal-dialog{background:var(--surface,#fff);color:var(--text,#16181d);font-family:var(--font,system-ui,-apple-system,Segoe UI,Roboto,sans-serif);max-width:760px;width:100%;max-height:86vh;overflow:auto;border-radius:var(--radius,14px);padding:32px clamp(20px,4vw,40px);box-shadow:0 24px 60px rgba(0,0,0,.4);outline:none}
+.ws-legal-dialog h2{margin:0 0 6px;font-size:clamp(20px,3vw,26px);color:var(--text,#16181d)}
+.ws-legal-dialog h3{margin:22px 0 6px;font-size:16px;color:var(--text,#16181d)}
+.ws-legal-dialog p,.ws-legal-dialog li{font-size:14.5px;line-height:1.65;color:var(--muted,#5a5f66)}
+.ws-legal-dialog ul{margin:6px 0;padding-left:20px}
+.ws-legal-dialog a{color:var(--brand,#2563eb)}
+.ws-legal-dialog .ws-legal-updated{font-size:12.5px;opacity:.7;margin-top:24px}
+.ws-legal-close{position:sticky;top:0;float:right;margin:-12px -10px 0 0;background:transparent;border:0;font-size:26px;line-height:1;cursor:pointer;color:var(--muted,#5a5f66);padding:6px 10px;border-radius:8px;min-width:44px;min-height:44px}
+.ws-legal-close:hover{color:var(--brand,#2563eb)}
+.ws-legal-close:focus-visible{outline:2px solid var(--brand,#2563eb);outline-offset:2px}
+.ws-cookie-banner{position:fixed;left:16px;right:16px;bottom:16px;z-index:9998;margin:0 auto;max-width:880px;background:var(--surface,#16181d);color:var(--text,#f4f5f7);font-family:var(--font,system-ui,-apple-system,Segoe UI,Roboto,sans-serif);border:1px solid rgba(127,127,127,.22);border-radius:var(--radius,14px);box-shadow:0 16px 44px rgba(0,0,0,.38);padding:18px 20px;display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;justify-content:space-between}
+.ws-cookie-banner[hidden]{display:none}
+.ws-cookie-text{margin:0;font-size:13.5px;line-height:1.55;color:var(--muted,#c4c8ce);flex:1 1 320px}
+.ws-cookie-text a{color:var(--brand,#4f8cff)}
+.ws-cookie-actions{display:flex;gap:10px;flex-wrap:wrap}
+.ws-btn{font:inherit;font-size:14px;font-weight:600;cursor:pointer;border-radius:var(--radius,10px);padding:11px 18px;min-height:44px;border:1px solid transparent;transition:transform .1s,opacity .15s}
+.ws-btn:active{transform:translateY(1px)}
+.ws-btn:focus-visible{outline:2px solid var(--brand,#4f8cff);outline-offset:2px}
+.ws-btn-primary{background:var(--brand,#4f8cff);color:var(--brand-contrast,#fff)}
+.ws-btn-ghost{background:transparent;color:var(--text,#f4f5f7);border-color:rgba(127,127,127,.35)}
+@media (max-width:560px){.ws-cookie-actions{width:100%}.ws-btn{flex:1 1 auto}}
+@media (prefers-reduced-motion:reduce){.ws-legal-links a,.ws-btn{transition:none}}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Przejdź do treści</a>
+
+<header>
+<nav aria-label="Nawigacja główna">
+<div class="logo">Glamour</div>
+<button class="menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<ul class="nav-links" id="main-menu">
+<li><a href="#oferta">Oferta</a></li>
+<li><a href="#galeria">Galeria</a></li>
+<li><a href="#opinie">Opinie</a></li>
+<li><a href="#kontakt">Kontakt</a></li>
+<li><a href="tel:+48602223344" class="cta-nav">Zadzwoń: 602 223 344</a></li>
+</ul>
+</nav>
+</header>
+
+<main id="main">
+<section class="hero">
+<div class="hero-content">
+<p class="hero-eyebrow">Warszawa, ul. Piękna 8</p>
+<h1>Twoja naturalna piękność w profesjonalnych rękach</h1>
+<p class="hero-subtitle">Zabiegi na twarz i ciało, manicure hybrydowy, stylizacja rzęs — odkryj lepszą wersję siebie</p>
+<div class="hero-cta">
+<a href="tel:+48602223344" class="btn btn-primary">Umów wizytę: 602 223 344</a>
+<a href="#oferta" class="btn btn-secondary">Zobacz zabiegi</a>
+</div>
+</div>
+</section>
+
+<section class="about">
+<div class="about-content">
+<p>Studio Urody Glamour to przestrzeń stworzona dla osób ceniących profesjonalizm i indywidualną opiekę. Każdy zabieg dobieramy do potrzeb Twojej skóry i stylu życia — bez zbędnych obietnic, za to z widocznym efektem.</p>
+<p>Pracujemy na sprawdzonych kosmetykach, nowoczesnymi metodami, w atmosferze, która pozwala naprawdę odpocząć. Nasi klienci wracają, bo czują różnicę — zarówno w wyglądzie skóry, jak i samopoczuciu po wyjściu z salonu.</p>
+<p>Zapraszamy do salonu w centrum Warszawy, tuż przy ulicy Pięknej — łatwy dojazd, wygodne godziny otwarcia, możliwość umówienia wizyty tego samego dnia.</p>
+</div>
+</section>
+
+<section id="oferta" class="services">
+<div class="section-header">
+<p class="section-tag">Oferta</p>
+<h2>Zabiegi dopasowane do Twoich potrzeb</h2>
+<p>Profesjonalne usługi kosmetyczne z dbałością o efekt i komfort</p>
+</div>
+<div class="services-grid">
+<article class="service-card">
+<div class="service-icon" aria-hidden="true">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 4C10.48 4 6 8.48 6 14C6 16.8 7.24 19.32 9.2 21.08C10.64 22.36 11.5 24.2 11.5 26.2V28H20.5V26.2C20.5 24.2 21.36 22.36 22.8 21.08C24.76 19.32 26 16.8 26 14C26 8.48 21.52 4 16 4Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13 28H19" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>
+</div>
+<h3>Oczyszczanie twarzy</h3>
+<p>Głębokie oczyszczanie, usunięcie zaskórników, maska dostosowana do typu skóry. Twarz oddycha, wygląda świeżo i promienieje.</p>
+<p class="service-price">od 180 zł</p>
+</article>
+
+<article class="service-card">
+<div class="service-icon" aria-hidden="true">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="16" cy="16" r="10" stroke="white" stroke-width="2"/>
+<path d="M16 10V16L20 18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>
+</div>
+<h3>Zabiegi anti-aging</h3>
+<p>Lifting, mezoterapia, masaż liftingujący — widoczna poprawa napięcia i wygładzenie zmarszczek. Efekt młodszego wyglądu bez skalpela.</p>
+<p class="service-price">od 250 zł</p>
+</article>
+
+<article class="service-card">
+<div class="service-icon" aria-hidden="true">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 14C8 10.68 10.68 8 14 8H18C21.32 8 24 10.68 24 14V18C24 21.32 21.32 24 18 24H14C10.68 24 8 21.32 8 18V14Z" stroke="white" stroke-width="2"/>
+<path d="M4 16H8M24 16H28" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>
+</div>
+<h3>Manicure hybrydowy</h3>
+<p>Trwały, lśniący kolor na 3–4 tygodnie. Precyzyjne wykonanie, setki odcieni do wyboru, pielęgnacja skórek w cenie zabiegu.</p>
+<p class="service-price">od 120 zł</p>
+</article>
+
+<article class="service-card">
+<div class="service-icon" aria-hidden="true">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="16" cy="16" rx="8" ry="4" stroke="white" stroke-width="2"/>
+<path d="M8 16C8 16 10 12 16 12C22 12 24 16 24 16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<path d="M12 18L11 20M20 18L21 20" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</svg>
+</div>
+<h3>Stylizacja rzęs</h3>
+<p>Laminacja, lifting lub przedłużanie metodą 1:1 — naturalny efekt lub wyraziste spojrzenie. Bez uszkodzeń, długotrwały rezultat.</p>
+<p class="service-price">od 150 zł</p>
+</article>
+
+<article class="service-card">
+<div class="service-icon" aria-hidden="true">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 6V26M10 12L16 6L22 12M10 20L16 26L22 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<h3>Masaże relaksacyjne</h3>
+<p>Masaż twarzy, głowy i szyi poprawia krążenie, redukuje napięcie mięśni, wspomaga regenerację skóry. Chwila oddechu w codziennym biegu.</p>
+<p class="service-price">od 140 zł</p>
+</article>
+
+<article class="service-card">
+<div class="service-icon" aria-hidden="true">
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="6" y="10" width="20" height="16" rx="2" stroke="white" stroke-width="2"/>
+<path d="M10 10V8C10 6.9 10.9 6 12 6H20C21.1 6 22 6.9 22 8V10" stroke="white" stroke-width="2"/>
+<circle cx="16" cy="18" r="2" fill="white"/>
+</svg>
+</div>
+<h3>Pielęgnacja ciała</h3>
+<p>Peelingi, nawilżanie, ujędrnianie — kompleksowa opieka, która zwraca skórze gładkość, elastyczność i zdrowy wygląd.</p>
+<p class="service-price">od 200 zł</p>
+</article>
+</div>
+</section>
+
+<section id="galeria" class="gallery">
+<div class="section-header">
+<p class="section-tag">Galeria</p>
+<h2>Zobacz nasze wnętrze</h2>
+<p>Przestrzeń zaprojektowana z myślą o Twoim komforcie</p>
+</div>
+<div class="gallery-grid">
+<div class="gallery-item">
+<img src="/studio-urody-glamour-warszawa/foto-1.jpg" alt="Gabinet kosmetyczny wyposażony w profesjonalny sprzęt i leżankę do zabiegów" loading="lazy">
+</div>
+<div class="gallery-item">
+<img src="/studio-urody-glamour-warszawa/foto-2.jpg" alt="Eleganckie wnętrze salonu urody w czarno-białej kolorystyce" loading="lazy">
+</div>
+<div class="gallery-item">
+<img src="/studio-urody-glamour-warszawa/foto-3.jpg" alt="Recepcja w salonie kosmetycznym z kwiatami i półkami z kosmetykami" loading="lazy">
+</div>
+</div>
+</section>
+
+<section id="opinie" class="reviews">
+<div class="section-header">
+<p class="section-tag">Opinie</p>
+<h2>Co mówią nasi klienci</h2>
+</div>
+<div class="rating-summary">
+<div class="rating-number">4.9</div>
+<div class="stars" aria-label="Ocena 4.9 na 5 gwiazdek">★★★★★</div>
+<p class="rating-count">156 opinii w Google</p>
+</div>
+<div class="reviews-grid">
+<article class="review-card">
+<div class="review-stars" aria-label="5 gwiazdek">★★★★★</div>
+<p class="review-text">Profesjonalizm na każdym kroku. Pani kosmetyczka dokładnie dobrała zabieg do mojej skóry i efekt widać od razu. Wracam tu regularnie i polecam wszystkim znajomym.</p>
+<p class="review-author">— Katarzyna</p>
+</article>
+<article class="review-card">
+<div class="review-stars" aria-label="5 gwiazdek">★★★★★</div>
+<p class="review-text">Manicure hybrydowy trzyma się u mnie rekordowo długo, a przy tym wygląda idealnie. Bardzo miła obsługa i czysto. Nie wyobrażam sobie zmiany salonu.</p>
+<p class="review-author">— Agnieszka</p>
+</article>
+<article class="review-card">
+<div class="review-stars" aria-label="5 gwiazdek">★★★★★</div>
+<p class="review-text">Laminacja rzęs wyszła lepiej niż zakładałam — naturalny, ale wyrazisty efekt. Mogę w końcu wyjść bez tuszu i czuć się pewnie. Gorąco polecam!</p>
+<p class="review-author">— Monika</p>
+</article>
+</div>
+</section>
+
+<section id="kontakt" class="contact">
+<div class="section-header">
+<p class="section-tag">Kontakt</p>
+<h2>Umów wizytę</h2>
+<p>Skontaktuj się z nami telefonicznie — odpowiemy na wszystkie pytania</p>
+</div>
+<div class="contact-wrapper">
+<div class="contact-info">
+<h2>Studio Urody Glamour</h2>
+<div class="contact-details">
+<div class="contact-item">
+<div class="contact-icon" aria-hidden="true">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M22 16.92V19.92C22 20.97 21.13 21.88 20.09 21.92C19.75 21.94 19.42 21.96 19.08 21.96C10.15 21.96 3 14.81 3 5.88C3 5.54 3.01 5.21 3.04 4.87C3.07 3.83 3.98 2.96 5.03 2.96H8.03C8.56 2.96 9.01 3.35 9.07 3.88C9.13 4.37 9.22 4.85 9.35 5.32C9.47 5.75 9.35 6.22 9.03 6.54L7.63 7.94C8.93 10.52 11.38 12.97 13.96 14.27L15.36 12.87C15.68 12.55 16.15 12.43 16.58 12.55C17.05 12.68 17.53 12.77 18.02 12.83C18.55 12.89 18.94 13.35 18.94 13.88V16.92H22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<div class="contact-item-content">
+<h3>Telefon</h3>
+<p><a href="tel:+48602223344">602 223 344</a></p>
+</div>
+</div>
+
+<div class="contact-item">
+<div class="contact-icon" aria-hidden="true">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C8.13 2 5 5.13 5 9C5 14.25 12 22 12 22C12 22 19 14.25 19 9C19 5.13 15.87 2 12 2ZM12 11.5C10.62 11.5 9.5 10.38 9.5 9C9.5 7.62 10.62 6.5 12 6.5C13.38 6.5 14.5 7.62 14.5 9C14.5 10.38 13.38 11.5 12 11.5Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<div class="contact-item-content">
+<h3>Adres</h3>
+<p>ul. Piękna 8<br>00-549 Warszawa</p>
+</div>
+</div>
+
+<div class="contact-item">
+<div class="contact-icon" aria-hidden="true">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="3" y="6" width="18" height="15" rx="2" stroke="white" stroke-width="2"/>
+<path d="M3 10L12 14L21 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</div>
+<div class="contact-item-content">
+<h3>Godziny otwarcia</h3>
+<ul class="hours-list">
+<li><span>Poniedziałek – Piątek</span> <strong>09:00 – 19:00</strong></li>
+<li><span>Sobota</span> <strong>10:00 – 16:00</strong></li>
+<li><span>Niedziela</span> <strong>Nieczynne</strong></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+<div class="map-container">
+<iframe src="https://maps.google.com/maps?q=ul.+Pi%C4%99kna+8%2C+00-549+Warszawa&output=embed" loading="lazy" title="Mapa dojazdu — Studio Urody Glamour, ul. Piękna 8, Warszawa" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<a href="https://www.google.com/maps/search/?api=1&query=ul.+Pi%C4%99kna+8%2C+00-549+Warszawa" target="_blank" rel="noopener noreferrer" class="map-link">
+Otwórz w Google Maps →
+</a>
+</div>
+</div>
+</section>
+</main>
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "BeautySalon",
+"name": "Studio Urody Glamour",
+"description": "Profesjonalne zabiegi kosmetyczne w centrum Warszawy. Pielęgnacja twarzy, manicure hybrydowy, stylizacja rzęs.",
+"telephone": "+48602223344",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "ul. Piękna 8",
+"addressLocality": "Warszawa",
+"postalCode": "00-549",
+"addressCountry": "PL"
+},
+"areaServed": {
+"@type": "City",
+"name": "Warszawa"
+},
+"priceRange": "120 zł - 250 zł",
+"openingHoursSpecification": [
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+"opens": "09:00",
+"closes": "19:00"
+},
+{
+"@type": "OpeningHoursSpecification",
+"dayOfWeek": "Saturday",
+"opens": "10:00",
+"closes": "16:00"
+}
+],
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.9",
+"reviewCount": "156"
+}
+}
+</script>
+
+<script>
+(function() {
+'use strict';
+
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+const navItems = navLinks.querySelectorAll('a');
+
+menuToggle.addEventListener('click', function() {
+const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+menuToggle.setAttribute('aria-expanded', !isExpanded);
+menuToggle.classList.toggle('active');
+navLinks.classList.toggle('active');
+});
+
+navItems.forEach(function(item) {
+item.addEventListener('click', function() {
+if (navLinks.classList.contains('active')) {
+menuToggle.setAttribute('aria-expanded', 'false');
+menuToggle.classList.remove('active');
+navLinks.classList.remove('active');
+}
+});
+});
+
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+anchor.addEventListener('click', function(e) {
+const targetId = this.getAttribute('href');
+if (targetId.length > 1) {
+const targetEl = document.querySelector(targetId);
+if (targetEl) {
+e.preventDefault();
+targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+}
+});
+});
+})();
+</script>
+<footer class="ws-legal-footer">
+  <p class="ws-legal-copy">&copy; 2026 Studio Urody Glamour. Wszelkie prawa zastrzeżone.</p>
+  <nav class="ws-legal-links" aria-label="Informacje prawne">
+    <a href="#" data-ws-open="ws-privacy">Polityka prywatności</a>
+    <a href="#" data-ws-open="ws-cookies">Polityka cookies</a>
+  </nav>
+</footer>
+<div class="ws-legal-modal" id="ws-privacy" role="dialog" aria-modal="true" aria-labelledby="ws-privacy-title" hidden>
+  <div class="ws-legal-dialog" tabindex="-1">
+    <button type="button" class="ws-legal-close" data-ws-close aria-label="Zamknij">&times;</button>
+    <h2 id="ws-privacy-title">Polityka prywatności</h2>
+    <p>Niniejsza polityka opisuje zasady przetwarzania danych osobowych osób, które kontaktują się z firmą <strong>Studio Urody Glamour</strong>, zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO).</p>
+
+    <h3>1. Administrator danych</h3>
+    <p>Administratorem danych osobowych jest Studio Urody Glamour, ul. Piękna 8, 00-549 Warszawa (tel. <a href="tel:+48602223344">+48602223344</a>).</p>
+
+    <h3>2. Zakres i cel przetwarzania</h3>
+    <p>Przetwarzamy dane, które przekazują nam Państwo dobrowolnie podczas kontaktu (np. imię, numer telefonu oraz treść zapytania). Dane wykorzystujemy wyłącznie w celu udzielenia odpowiedzi na zapytanie, przedstawienia oferty oraz obsługi sprawy, której zapytanie dotyczy.</p>
+
+    <h3>3. Podstawa prawna</h3>
+    <p>Podstawą przetwarzania jest art. 6 ust. 1 lit. a RODO (zgoda wyrażona poprzez kontakt) oraz art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes administratora polegający na obsłudze zapytań i prowadzeniu korespondencji).</p>
+
+    <h3>4. Dobrowolność podania danych</h3>
+    <p>Podanie danych jest dobrowolne, jednak niezbędne do nawiązania kontaktu i udzielenia odpowiedzi.</p>
+
+    <h3>5. Okres przechowywania</h3>
+    <p>Dane przechowujemy przez czas niezbędny do obsługi zapytania i prowadzenia korespondencji, a po jego zakończeniu — do czasu przedawnienia ewentualnych roszczeń lub do momentu wycofania zgody.</p>
+
+    <h3>6. Odbiorcy danych i mapa Google</h3>
+    <p>Dane przekazane nam bezpośrednio (np. w rozmowie telefonicznej) nie są sprzedawane ani udostępniane podmiotom trzecim w celach marketingowych; mogą być powierzone wyłącznie podmiotom wspierającym działanie firmy (np. dostawcy hostingu) na podstawie umów powierzenia.</p>
+    <p>Strona zawiera osadzoną mapę dojazdu dostarczaną przez Google (Google Ireland Limited). Po jej załadowaniu Google, jako niezależny administrator, może przetwarzać dane techniczne (np. adres IP) zgodnie z <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">polityką prywatności Google</a>, w tym poza Europejskim Obszarem Gospodarczym na podstawie odpowiednich zabezpieczeń.</p>
+
+    <h3>7. Prawa osoby, której dane dotyczą</h3>
+    <p>Przysługuje Państwu prawo do:</p>
+    <ul>
+      <li>dostępu do danych oraz otrzymania ich kopii,</li>
+      <li>sprostowania (poprawienia) danych,</li>
+      <li>usunięcia danych,</li>
+      <li>ograniczenia przetwarzania,</li>
+      <li>wniesienia sprzeciwu wobec przetwarzania,</li>
+      <li>przenoszenia danych,</li>
+      <li>wycofania zgody w dowolnym momencie (bez wpływu na zgodność z prawem przetwarzania sprzed wycofania),</li>
+      <li>wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa).</li>
+    </ul>
+
+    <h3>8. Zautomatyzowane decyzje i profilowanie</h3>
+    <p>Dane nie są wykorzystywane do zautomatyzowanego podejmowania decyzji ani do profilowania.</p>
+
+    <h3>9. Pliki cookies</h3>
+    <p>Zasady korzystania z plików cookies opisuje odrębna <a href="#" data-ws-open="ws-cookies">Polityka cookies</a>.</p>
+  </div>
+</div>
+<div class="ws-legal-modal" id="ws-cookies" role="dialog" aria-modal="true" aria-labelledby="ws-cookies-title" hidden>
+  <div class="ws-legal-dialog" tabindex="-1">
+    <button type="button" class="ws-legal-close" data-ws-close aria-label="Zamknij">&times;</button>
+    <h2 id="ws-cookies-title">Polityka cookies</h2>
+    <p>Niniejsza strona firmy <strong>Studio Urody Glamour</strong> korzysta z plików cookies oraz pamięci lokalnej przeglądarki w ograniczonym, niezbędnym zakresie.</p>
+
+    <h3>1. Czym są pliki cookies</h3>
+    <p>Pliki cookies to niewielkie informacje tekstowe zapisywane przez przeglądarkę na urządzeniu użytkownika. Mogą być odczytywane przy kolejnych odwiedzinach strony.</p>
+
+    <h3>2. Pliki własne</h3>
+    <p>Stosujemy wyłącznie <strong>niezbędne i funkcjonalne</strong> mechanizmy własne — w pamięci lokalnej (localStorage) zapisujemy jedynie informację o Państwa decyzji dotyczącej zgody, aby nie wyświetlać komunikatu ponownie. Nie używamy własnych plików cookies analitycznych ani marketingowych i nie śledzimy aktywności użytkowników.</p>
+
+    <h3>3. Mapa Google (treści podmiotu trzeciego)</h3>
+    <p>W sekcji kontaktowej osadzona jest mapa dojazdu dostarczana przez Google (usługa Google Maps). Po jej załadowaniu Google może zapisywać własne pliki cookies i przetwarzać dane (np. adres IP) zgodnie z <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">polityką prywatności Google</a>. Nie mamy wpływu na te pliki — można nimi zarządzać w ustawieniach przeglądarki.</p>
+
+    <h3>4. Zarządzanie cookies</h3>
+    <p>W każdej chwili mogą Państwo zarządzać plikami cookies i pamięcią lokalną z poziomu ustawień przeglądarki — w tym je przeglądać, blokować lub usuwać. Sposób różni się w zależności od przeglądarki (Chrome, Firefox, Safari, Edge); odpowiednie instrukcje znajdują się w jej dokumentacji.</p>
+
+    <h3>5. Wycofanie zgody</h3>
+    <p>Wyczyszczenie danych witryny w przeglądarce usunie zapamiętaną decyzję — komunikat o zgodzie pojawi się przy kolejnej wizycie.</p>
+  </div>
+</div>
+<div class="ws-cookie-banner" id="ws-cookie-banner" role="dialog" aria-live="polite" aria-label="Informacja o plikach cookies">
+  <p class="ws-cookie-text">Ta strona zapisuje niezbędne dane techniczne, aby zapamiętać Twoją decyzję, oraz osadza mapę Google (która może używać własnych cookies). Nie stosujemy własnych cookies analitycznych ani marketingowych. Szczegóły w <a href="#" data-ws-open="ws-cookies">Polityce cookies</a>.</p>
+  <div class="ws-cookie-actions">
+    <button type="button" class="ws-btn ws-btn-ghost" data-ws-consent="essential">Tylko niezbędne</button>
+    <button type="button" class="ws-btn ws-btn-primary" data-ws-consent="all">Akceptuję</button>
+  </div>
+</div>
+<script>
+(function(){
+  var KEY="ws-cookie-consent";
+  var banner=document.getElementById("ws-cookie-banner");
+  function dismiss(v){try{localStorage.setItem(KEY,v);}catch(e){}if(banner)banner.hidden=true;}
+  try{if(localStorage.getItem(KEY)&&banner)banner.hidden=true;}catch(e){}
+  document.querySelectorAll("[data-ws-consent]").forEach(function(b){
+    b.addEventListener("click",function(){dismiss(b.getAttribute("data-ws-consent"));});
+  });
+  var lastFocus=null;
+  function openModal(id){var m=document.getElementById(id);if(!m)return;lastFocus=document.activeElement;m.hidden=false;document.body.style.overflow="hidden";var d=m.querySelector(".ws-legal-dialog");if(d)d.focus();}
+  function closeModal(m){m.hidden=true;document.body.style.overflow="";if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+  document.querySelectorAll("[data-ws-open]").forEach(function(t){
+    t.addEventListener("click",function(e){e.preventDefault();openModal(t.getAttribute("data-ws-open"));});
+  });
+  document.querySelectorAll(".ws-legal-modal").forEach(function(m){
+    m.addEventListener("click",function(e){if(e.target===m)closeModal(m);});
+    m.querySelectorAll("[data-ws-close]").forEach(function(x){x.addEventListener("click",function(){closeModal(m);});});
+  });
+  document.addEventListener("keydown",function(e){
+    if(e.key==="Escape"){document.querySelectorAll(".ws-legal-modal").forEach(function(m){if(!m.hidden)closeModal(m);});}
+  });
+})();
+</script>
+</body>
+</html>
