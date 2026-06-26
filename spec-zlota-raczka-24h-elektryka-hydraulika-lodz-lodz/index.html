@@ -1,0 +1,1366 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SPEC - Złota Rączka 24h — Elektryka, Hydraulika, Łódź</title>
+<meta name="description" content="Profesjonalna złota rączka w Łodzi. Elektryka, hydraulika, remonty 24h. Doświadczony specjalista, sprawdzone rozwiązania. Zadzwoń: 790 465 427">
+<meta name="keywords" content="złota rączka Łódź, elektryk Łódź, hydraulik Łódź, remonty Łódź, awarie 24h, naprawa AGD, usługi remontowe">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="SPEC - Złota Rączka 24h — Elektryka, Hydraulika, Łódź">
+<meta property="og:description" content="Profesjonalna złota rączka w Łodzi. Elektryka, hydraulika, remonty 24h. Doświadczony specjalista, sprawdzone rozwiązania.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pl_PL">
+<meta property="og:site_name" content="SPEC - Złota Rączka 24h">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🔧</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+--brand: #4A7C59;
+--brand-contrast: #FFFFFF;
+--bg: #F9F7F4;
+--surface: #FFFFFF;
+--text: #2C3E2F;
+--muted: #6B7C6E;
+--accent: #8BA888;
+--beige: #E8E3D9;
+--wood: #B89968;
+--font: 'Mulish', sans-serif;
+--font-display: 'Cormorant Garamond', serif;
+--radius: 16px;
+}
+
+*, *::before, *::after {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+font-family: var(--font);
+color: var(--text);
+background: var(--bg);
+line-height: 1.6;
+-webkit-font-smoothing: antialiased;
+overflow-x: hidden;
+}
+
+a {
+color: inherit;
+text-decoration: none;
+}
+
+img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+.skip-link {
+position: absolute;
+top: -40px;
+left: 10px;
+background: var(--brand);
+color: var(--brand-contrast);
+padding: 8px 16px;
+border-radius: 4px;
+z-index: 10000;
+font-weight: 600;
+}
+
+.skip-link:focus {
+top: 10px;
+}
+
+header {
+position: sticky;
+top: 0;
+background: rgba(255, 255, 255, 0.96);
+backdrop-filter: blur(10px);
+z-index: 1000;
+box-shadow: 0 2px 12px rgba(74, 124, 89, 0.08);
+}
+
+.header-inner {
+max-width: 1400px;
+margin: 0 auto;
+padding: 20px 24px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo {
+font-family: var(--font-display);
+font-size: 24px;
+font-weight: 700;
+color: var(--brand);
+letter-spacing: -0.02em;
+}
+
+nav ul {
+list-style: none;
+display: flex;
+gap: 36px;
+}
+
+nav a {
+font-weight: 500;
+font-size: 15px;
+transition: color 0.3s;
+position: relative;
+}
+
+nav a::after {
+content: '';
+position: absolute;
+bottom: -4px;
+left: 0;
+width: 0;
+height: 2px;
+background: var(--brand);
+transition: width 0.3s;
+}
+
+nav a:hover::after,
+nav a:focus-visible::after {
+width: 100%;
+}
+
+nav a:focus-visible {
+outline: 2px solid var(--brand);
+outline-offset: 4px;
+border-radius: 4px;
+}
+
+.menu-toggle {
+display: none;
+background: none;
+border: none;
+cursor: pointer;
+padding: 8px;
+}
+
+.menu-toggle span {
+display: block;
+width: 24px;
+height: 2px;
+background: var(--text);
+margin: 5px 0;
+transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+.menu-toggle {
+display: block;
+}
+
+nav {
+position: absolute;
+top: 100%;
+left: 0;
+right: 0;
+background: var(--surface);
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.3s;
+}
+
+nav.open {
+max-height: 400px;
+}
+
+nav ul {
+flex-direction: column;
+gap: 0;
+padding: 16px 0;
+}
+
+nav a {
+display: block;
+padding: 14px 24px;
+}
+}
+
+.hero {
+position: relative;
+min-height: 85vh;
+display: flex;
+align-items: center;
+overflow: hidden;
+background: linear-gradient(135deg, var(--brand) 0%, #3A6249 100%);
+}
+
+.hero::before {
+content: '';
+position: absolute;
+top: -10%;
+right: -5%;
+width: 50%;
+height: 120%;
+background: radial-gradient(ellipse, rgba(139, 168, 136, 0.3) 0%, transparent 70%);
+border-radius: 50%;
+pointer-events: none;
+}
+
+.hero-bg {
+position: absolute;
+inset: 0;
+z-index: 1;
+}
+
+.hero-bg img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+opacity: 0.15;
+}
+
+.hero-content {
+position: relative;
+z-index: 2;
+max-width: 1400px;
+margin: 0 auto;
+padding: 80px 24px;
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 60px;
+align-items: center;
+}
+
+.hero-text h1 {
+font-family: var(--font-display);
+font-size: clamp(42px, 6vw, 68px);
+font-weight: 700;
+color: var(--brand-contrast);
+line-height: 1.1;
+margin-bottom: 24px;
+letter-spacing: -0.02em;
+}
+
+.hero-text .subtitle {
+font-size: clamp(18px, 2.5vw, 22px);
+color: rgba(255, 255, 255, 0.9);
+margin-bottom: 16px;
+font-weight: 500;
+}
+
+.hero-text .lead {
+font-size: 17px;
+color: rgba(255, 255, 255, 0.85);
+margin-bottom: 40px;
+line-height: 1.7;
+}
+
+.hero-cta {
+display: flex;
+gap: 16px;
+flex-wrap: wrap;
+}
+
+.btn {
+display: inline-flex;
+align-items: center;
+gap: 10px;
+padding: 16px 32px;
+border-radius: var(--radius);
+font-weight: 600;
+font-size: 16px;
+transition: all 0.3s;
+cursor: pointer;
+border: none;
+min-height: 44px;
+min-width: 44px;
+justify-content: center;
+}
+
+.btn:focus-visible {
+outline: 3px solid rgba(255, 255, 255, 0.6);
+outline-offset: 3px;
+}
+
+.btn-primary {
+background: var(--brand-contrast);
+color: var(--brand);
+box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.btn-primary:hover {
+transform: translateY(-2px);
+box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+background: transparent;
+color: var(--brand-contrast);
+border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-secondary:hover {
+background: rgba(255, 255, 255, 0.1);
+border-color: rgba(255, 255, 255, 0.7);
+}
+
+.hero-image-wrap {
+position: relative;
+}
+
+.hero-image-wrap img {
+width: 100%;
+height: auto;
+border-radius: 24px;
+box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.trust-badge {
+position: absolute;
+bottom: -20px;
+right: -20px;
+background: var(--surface);
+padding: 20px 28px;
+border-radius: var(--radius);
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+text-align: center;
+}
+
+.trust-badge .stars {
+color: #F59E0B;
+font-size: 20px;
+margin-bottom: 6px;
+}
+
+.trust-badge .rating {
+font-family: var(--font-display);
+font-size: 28px;
+font-weight: 700;
+color: var(--brand);
+line-height: 1;
+}
+
+.trust-badge .reviews {
+font-size: 13px;
+color: var(--muted);
+}
+
+@media (max-width: 968px) {
+.hero-content {
+grid-template-columns: 1fr;
+gap: 40px;
+}
+
+.trust-badge {
+position: static;
+margin-top: 20px;
+display: inline-block;
+}
+}
+
+section {
+position: relative;
+}
+
+.section-alt {
+background: var(--surface);
+}
+
+.section-beige {
+background: var(--beige);
+}
+
+.container {
+max-width: 1400px;
+margin: 0 auto;
+padding: 80px 24px;
+}
+
+.section-header {
+text-align: center;
+margin-bottom: 60px;
+}
+
+.section-eyebrow {
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+color: var(--accent);
+margin-bottom: 12px;
+}
+
+.section-title {
+font-family: var(--font-display);
+font-size: clamp(36px, 5vw, 52px);
+font-weight: 700;
+color: var(--text);
+line-height: 1.2;
+margin-bottom: 16px;
+letter-spacing: -0.02em;
+}
+
+.section-desc {
+font-size: 18px;
+color: var(--muted);
+max-width: 700px;
+margin: 0 auto;
+line-height: 1.7;
+}
+
+.about-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 60px;
+align-items: center;
+}
+
+.about-image {
+position: relative;
+}
+
+.about-image::before {
+content: '';
+position: absolute;
+top: -20px;
+left: -20px;
+width: 100%;
+height: 100%;
+background: linear-gradient(135deg, var(--accent), var(--brand));
+border-radius: var(--radius);
+opacity: 0.15;
+z-index: -1;
+}
+
+.about-image img {
+width: 100%;
+border-radius: var(--radius);
+box-shadow: 0 12px 40px rgba(74, 124, 89, 0.15);
+}
+
+.about-text h3 {
+font-family: var(--font-display);
+font-size: 32px;
+font-weight: 700;
+color: var(--text);
+margin-bottom: 20px;
+line-height: 1.3;
+}
+
+.about-text p {
+font-size: 17px;
+color: var(--muted);
+margin-bottom: 20px;
+line-height: 1.8;
+}
+
+.about-features {
+display: grid;
+gap: 16px;
+margin-top: 32px;
+}
+
+.feature-item {
+display: flex;
+align-items: center;
+gap: 16px;
+}
+
+.feature-icon {
+width: 48px;
+height: 48px;
+border-radius: 12px;
+background: linear-gradient(135deg, var(--brand), var(--accent));
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+}
+
+.feature-icon svg {
+width: 24px;
+height: 24px;
+fill: var(--brand-contrast);
+}
+
+.feature-text {
+font-weight: 600;
+color: var(--text);
+}
+
+@media (max-width: 968px) {
+.about-grid {
+grid-template-columns: 1fr;
+gap: 40px;
+}
+}
+
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 32px;
+}
+
+.service-card {
+background: var(--surface);
+border-radius: var(--radius);
+padding: 36px;
+box-shadow: 0 4px 20px rgba(74, 124, 89, 0.08);
+transition: all 0.4s;
+position: relative;
+overflow: hidden;
+}
+
+.service-card::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 4px;
+background: linear-gradient(90deg, var(--brand), var(--accent));
+transform: scaleX(0);
+transform-origin: left;
+transition: transform 0.4s;
+}
+
+.service-card:hover::before {
+transform: scaleX(1);
+}
+
+.service-card:hover {
+transform: translateY(-4px);
+box-shadow: 0 12px 32px rgba(74, 124, 89, 0.15);
+}
+
+.service-icon {
+width: 64px;
+height: 64px;
+border-radius: 16px;
+background: linear-gradient(135deg, rgba(74, 124, 89, 0.1), rgba(139, 168, 136, 0.1));
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 24px;
+}
+
+.service-icon svg {
+width: 32px;
+height: 32px;
+fill: var(--brand);
+}
+
+.service-card h3 {
+font-family: var(--font-display);
+font-size: 24px;
+font-weight: 700;
+color: var(--text);
+margin-bottom: 12px;
+}
+
+.service-card p {
+font-size: 15px;
+color: var(--muted);
+margin-bottom: 20px;
+line-height: 1.7;
+}
+
+.service-price {
+font-size: 28px;
+font-weight: 700;
+color: var(--brand);
+font-family: var(--font-display);
+}
+
+.service-price-note {
+font-size: 13px;
+color: var(--muted);
+margin-top: 4px;
+}
+
+.gallery-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+gap: 24px;
+}
+
+.gallery-item {
+position: relative;
+border-radius: var(--radius);
+overflow: hidden;
+aspect-ratio: 4/3;
+box-shadow: 0 4px 16px rgba(74, 124, 89, 0.1);
+transition: transform 0.4s;
+}
+
+.gallery-item:hover {
+transform: scale(1.03);
+}
+
+.gallery-item img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.reviews {
+background: linear-gradient(135deg, var(--brand) 0%, #3A6249 100%);
+color: var(--brand-contrast);
+position: relative;
+overflow: hidden;
+}
+
+.reviews::before {
+content: '';
+position: absolute;
+top: -30%;
+left: -10%;
+width: 60%;
+height: 160%;
+background: radial-gradient(ellipse, rgba(139, 168, 136, 0.2) 0%, transparent 70%);
+border-radius: 50%;
+pointer-events: none;
+}
+
+.reviews .section-header {
+position: relative;
+z-index: 2;
+}
+
+.reviews .section-eyebrow {
+color: rgba(255, 255, 255, 0.8);
+}
+
+.reviews .section-title {
+color: var(--brand-contrast);
+}
+
+.reviews .section-desc {
+color: rgba(255, 255, 255, 0.9);
+}
+
+.rating-summary {
+text-align: center;
+margin-bottom: 60px;
+position: relative;
+z-index: 2;
+}
+
+.rating-number {
+font-family: var(--font-display);
+font-size: 72px;
+font-weight: 700;
+color: var(--brand-contrast);
+line-height: 1;
+margin-bottom: 12px;
+}
+
+.rating-stars {
+font-size: 32px;
+color: #FCD34D;
+margin-bottom: 8px;
+}
+
+.rating-count {
+font-size: 16px;
+color: rgba(255, 255, 255, 0.8);
+}
+
+.reviews-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+gap: 32px;
+position: relative;
+z-index: 2;
+}
+
+.review-card {
+background: rgba(255, 255, 255, 0.95);
+border-radius: var(--radius);
+padding: 32px;
+box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.review-stars {
+color: #F59E0B;
+font-size: 20px;
+margin-bottom: 16px;
+}
+
+.review-text {
+font-size: 16px;
+color: var(--text);
+line-height: 1.7;
+margin-bottom: 20px;
+font-style: italic;
+}
+
+.review-author {
+font-weight: 600;
+color: var(--brand);
+font-size: 15px;
+}
+
+.contact-wrapper {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 60px;
+align-items: start;
+}
+
+.contact-info h3 {
+font-family: var(--font-display);
+font-size: 32px;
+font-weight: 700;
+color: var(--text);
+margin-bottom: 24px;
+}
+
+.contact-items {
+display: grid;
+gap: 24px;
+margin-bottom: 40px;
+}
+
+.contact-item {
+display: flex;
+align-items: start;
+gap: 16px;
+}
+
+.contact-icon {
+width: 48px;
+height: 48px;
+border-radius: 12px;
+background: linear-gradient(135deg, var(--brand), var(--accent));
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+}
+
+.contact-icon svg {
+width: 24px;
+height: 24px;
+fill: var(--brand-contrast);
+}
+
+.contact-details strong {
+display: block;
+font-weight: 700;
+color: var(--text);
+margin-bottom: 4px;
+}
+
+.contact-details span,
+.contact-details a {
+color: var(--muted);
+font-size: 15px;
+line-height: 1.6;
+}
+
+.contact-details a:hover {
+color: var(--brand);
+text-decoration: underline;
+}
+
+.contact-details a:focus-visible {
+outline: 2px solid var(--brand);
+outline-offset: 2px;
+border-radius: 4px;
+}
+
+.map-container {
+position: relative;
+border-radius: var(--radius);
+overflow: hidden;
+box-shadow: 0 8px 24px rgba(74, 124, 89, 0.15);
+height: 380px;
+}
+
+.map-container iframe {
+width: 100%;
+height: 100%;
+border: 0;
+}
+
+.map-link {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+margin-top: 16px;
+color: var(--brand);
+font-weight: 600;
+font-size: 15px;
+transition: gap 0.3s;
+}
+
+.map-link:hover {
+gap: 12px;
+}
+
+.map-link:focus-visible {
+outline: 2px solid var(--brand);
+outline-offset: 4px;
+border-radius: 4px;
+}
+
+@media (max-width: 968px) {
+.contact-wrapper {
+grid-template-columns: 1fr;
+gap: 40px;
+}
+}
+
+*:focus-visible {
+outline: 2px solid var(--brand);
+outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+*,
+*::before,
+*::after {
+animation-duration: 0.01ms !important;
+animation-iteration-count: 1 !important;
+transition-duration: 0.01ms !important;
+}
+}
+
+@media (max-width: 640px) {
+.hero-cta {
+flex-direction: column;
+width: 100%;
+}
+
+.btn {
+width: 100%;
+}
+
+.services-grid,
+.reviews-grid,
+.gallery-grid {
+grid-template-columns: 1fr;
+}
+}
+</style>
+<style>
+/* websource: blok prawny (RODO + cookies) — styl dziedziczy zmienne :root strony */
+.ws-legal-footer{background:var(--surface,#0f0f12);color:var(--muted,#9aa0a6);font-family:var(--font,system-ui,-apple-system,Segoe UI,Roboto,sans-serif);padding:28px 20px;display:flex;flex-wrap:wrap;gap:14px 24px;align-items:center;justify-content:space-between;border-top:1px solid rgba(127,127,127,.18);font-size:14px}
+.ws-legal-footer .ws-legal-copy{margin:0}
+.ws-legal-links{display:flex;flex-wrap:wrap;gap:18px}
+.ws-legal-links a{color:var(--muted,#9aa0a6);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s,color .15s}
+.ws-legal-links a:hover{color:var(--brand,#4f8cff)}
+.ws-legal-links a:focus-visible,.ws-legal-footer a:focus-visible{outline:2px solid var(--brand,#4f8cff);outline-offset:3px;border-radius:3px}
+.ws-legal-modal{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;padding:20px;background:rgba(0,0,0,.55);backdrop-filter:blur(2px)}
+.ws-legal-modal[hidden]{display:none}
+.ws-legal-dialog{background:var(--surface,#fff);color:var(--text,#16181d);font-family:var(--font,system-ui,-apple-system,Segoe UI,Roboto,sans-serif);max-width:760px;width:100%;max-height:86vh;overflow:auto;border-radius:var(--radius,14px);padding:32px clamp(20px,4vw,40px);box-shadow:0 24px 60px rgba(0,0,0,.4);outline:none}
+.ws-legal-dialog h2{margin:0 0 6px;font-size:clamp(20px,3vw,26px);color:var(--text,#16181d)}
+.ws-legal-dialog h3{margin:22px 0 6px;font-size:16px;color:var(--text,#16181d)}
+.ws-legal-dialog p,.ws-legal-dialog li{font-size:14.5px;line-height:1.65;color:var(--muted,#5a5f66)}
+.ws-legal-dialog ul{margin:6px 0;padding-left:20px}
+.ws-legal-dialog a{color:var(--brand,#2563eb)}
+.ws-legal-dialog .ws-legal-updated{font-size:12.5px;opacity:.7;margin-top:24px}
+.ws-legal-close{position:sticky;top:0;float:right;margin:-12px -10px 0 0;background:transparent;border:0;font-size:26px;line-height:1;cursor:pointer;color:var(--muted,#5a5f66);padding:6px 10px;border-radius:8px;min-width:44px;min-height:44px}
+.ws-legal-close:hover{color:var(--brand,#2563eb)}
+.ws-legal-close:focus-visible{outline:2px solid var(--brand,#2563eb);outline-offset:2px}
+.ws-cookie-banner{position:fixed;left:16px;right:16px;bottom:16px;z-index:9998;margin:0 auto;max-width:880px;background:var(--surface,#16181d);color:var(--text,#f4f5f7);font-family:var(--font,system-ui,-apple-system,Segoe UI,Roboto,sans-serif);border:1px solid rgba(127,127,127,.22);border-radius:var(--radius,14px);box-shadow:0 16px 44px rgba(0,0,0,.38);padding:18px 20px;display:flex;flex-wrap:wrap;gap:14px 20px;align-items:center;justify-content:space-between}
+.ws-cookie-banner[hidden]{display:none}
+.ws-cookie-text{margin:0;font-size:13.5px;line-height:1.55;color:var(--muted,#c4c8ce);flex:1 1 320px}
+.ws-cookie-text a{color:var(--brand,#4f8cff)}
+.ws-cookie-actions{display:flex;gap:10px;flex-wrap:wrap}
+.ws-btn{font:inherit;font-size:14px;font-weight:600;cursor:pointer;border-radius:var(--radius,10px);padding:11px 18px;min-height:44px;border:1px solid transparent;transition:transform .1s,opacity .15s}
+.ws-btn:active{transform:translateY(1px)}
+.ws-btn:focus-visible{outline:2px solid var(--brand,#4f8cff);outline-offset:2px}
+.ws-btn-primary{background:var(--brand,#4f8cff);color:var(--brand-contrast,#fff)}
+.ws-btn-ghost{background:transparent;color:var(--text,#f4f5f7);border-color:rgba(127,127,127,.35)}
+@media (max-width:560px){.ws-cookie-actions{width:100%}.ws-btn{flex:1 1 auto}}
+@media (prefers-reduced-motion:reduce){.ws-legal-links a,.ws-btn{transition:none}}
+</style>
+</head>
+<body>
+<a href="#main" class="skip-link">Przejdź do treści</a>
+
+<header>
+<div class="header-inner">
+<div class="logo">SPEC Złota Rączka</div>
+<button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Menu">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav id="main-nav">
+<ul>
+<li><a href="#uslugi">Usługi</a></li>
+<li><a href="#o-nas">O nas</a></li>
+<li><a href="#realizacje">Realizacje</a></li>
+<li><a href="#opinie">Opinie</a></li>
+<li><a href="#kontakt">Kontakt</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<main id="main">
+<section class="hero">
+<div class="hero-bg">
+<img src="/spec-zlota-raczka-24h-elektryka-hydraulika-lodz-lodz/hero.jpg" alt="Profesjonalny remontowiec podczas prac wykończeniowych">
+</div>
+<div class="hero-content">
+<div class="hero-text">
+<h1>Profesjonalna złota rączka w Łodzi — 24h na telefon</h1>
+<p class="subtitle">Elektryka · Hydraulika · Remonty · Serwis AGD</p>
+<p class="lead">Szybka reakcja, uczciwe ceny, sprawdzone rozwiązania. Jeden telefon załatwia sprawę — od drobnych napraw po kompleksowe wykończenia.</p>
+<div class="hero-cta">
+<a href="tel:+48790465427" class="btn btn-primary">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.36 11.36 0 004.41.89 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.89 4.41 1 1 0 01-.27 1.11l-2.2 2.2z"/>
+</svg>
+Zadzwoń: 790 465 427
+</a>
+<a href="#uslugi" class="btn btn-secondary">Zobacz usługi</a>
+</div>
+</div>
+<div class="hero-image-wrap">
+<img src="/spec-zlota-raczka-24h-elektryka-hydraulika-lodz-lodz/hero.jpg" alt="Specjalista podczas prac remontowych z użyciem poziomnicy" loading="lazy">
+<div class="trust-badge">
+<div class="stars" aria-label="Ocena 5 na 5 gwiazdek">★★★★★</div>
+<div class="rating">5.0</div>
+<div class="reviews">3 opinie Google</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="o-nas" class="section-alt">
+<div class="container">
+<div class="about-grid">
+<div class="about-image">
+<img src="/spec-zlota-raczka-24h-elektryka-hydraulika-lodz-lodz/foto-3.jpg" alt="Pomieszczenie w trakcie profesjonalnego remontu" loading="lazy">
+</div>
+<div class="about-text">
+<h2 class="section-title">Jeden numer, wszystkie rozwiązania</h2>
+<p>Od ponad dekady pomagam mieszkańcom Łodzi w codziennych wyzwaniach domowych i większych projektach remontowych. Specjalizuję się w elektryce, hydraulice i pracach wykończeniowych — zawsze z nastawieniem na trwałe, bezpieczne rozwiązania.</p>
+<p>Nie ma dla mnie zbyt małego zlecenia. Wymiana gniazdka, naprawa pralki, montaż lamp czy kompleksowe wykończenie mieszkania — każde zadanie traktuję z taką samą starannością.</p>
+<div class="about-features">
+<div class="feature-item">
+<div class="feature-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"/>
+</svg>
+</div>
+<div class="feature-text">Uprawnienia SEP i doświadczenie potwierdzane opiniami</div>
+</div>
+<div class="feature-item">
+<div class="feature-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+</svg>
+</div>
+<div class="feature-text">Dostępność 24/7 — awarie nie czekają na poniedziałek</div>
+</div>
+<div class="feature-item">
+<div class="feature-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+</svg>
+</div>
+<div class="feature-text">Realizacja w terminie uzgodnionym telefonicznie</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="uslugi" class="section-beige">
+<div class="container">
+<div class="section-header">
+<div class="section-eyebrow">Oferta</div>
+<h2 class="section-title">Czym mogę pomóc</h2>
+<p class="section-desc">Od drobnych napraw po kompleksowe wykończenia. Każde zlecenie wyceniam indywidualnie po oględzinach — poniższe ceny to orientacyjny punkt wyjścia.</p>
+</div>
+<div class="services-grid">
+<article class="service-card">
+<div class="service-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M12 2.02c-5.51 0-9.98 4.47-9.98 9.98s4.47 9.98 9.98 9.98 9.98-4.47 9.98-9.98S17.51 2.02 12 2.02zM11.48 20v-6.26H8L13 4v6.26h3.35L11.48 20z"/>
+</svg>
+</div>
+<h3>Usługi elektryczne</h3>
+<p>Montaż i wymiana gniazdek, włączników, lamp. Diagnostyka instalacji, naprawa awarii, układanie przewodów. Podłączenie AGD, instalacje zewnętrzne.</p>
+<div class="service-price">od 120 zł</div>
+<div class="service-price-note">wyjazd + robocizna</div>
+</article>
+
+<article class="service-card">
+<div class="service-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M12 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/>
+</svg>
+</div>
+<h3>Hydraulika</h3>
+<p>Wymiana baterii, udrażnianie rur, montaż umywalek i sedesów. Naprawa przecieków, podłączenie pralki/zmywarki. Instalacje wodno-kanalizacyjne.</p>
+<div class="service-price">od 150 zł</div>
+<div class="service-price-note">wyjazd + robocizna</div>
+</article>
+
+<article class="service-card">
+<div class="service-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.07.62-.07.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/>
+</svg>
+</div>
+<h3>Serwis AGD</h3>
+<p>Diagnostyka i naprawa pralek, zmywarek, lodówek. Podłączenie nowego sprzętu, wymiana uszczelnień, regulacja. Doradztwo przy zakupie AGD.</p>
+<div class="service-price">od 100 zł</div>
+<div class="service-price-note">diagnostyka</div>
+</article>
+
+<article class="service-card">
+<div class="service-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+</svg>
+</div>
+<h3>Prace wykończeniowe</h3>
+<p>Malowanie ścian, montaż paneli, układanie płytek. Szpachlowanie, gipsowanie, zabudowy karton-gips. Montaż listew, progów, akcesoriów łazienkowych.</p>
+<div class="service-price">od 180 zł</div>
+<div class="service-price-note">za m² lub roboczogodzinę</div>
+</article>
+
+<article class="service-card">
+<div class="service-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M18 16h-2v-1H8v1H6v-1H2v5h20v-5h-4zM20 8h-3V6c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v2H4c-1.1 0-2 .9-2 2v4h4v-2h2v2h8v-2h2v2h4v-4c0-1.1-.9-2-2-2zM9 8V6h6v2H9z"/>
+</svg>
+</div>
+<h3>Awarie 24h</h3>
+<p>Całodobowa interwencja przy awariach prądu, wody, gazu. Zabezpieczenie miejsca, doraźna naprawa, wymiana bezpieczników. Szybka reakcja w Łodzi.</p>
+<div class="service-price">wyjazd 200 zł</div>
+<div class="service-price-note">+ koszt naprawy</div>
+</article>
+
+<article class="service-card">
+<div class="service-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+</svg>
+</div>
+<h3>Montaż mebli i wyposażenia</h3>
+<p>Składanie mebli z paczek, montaż półek, szaf, kuchni. Wieszanie luster, obrazów, telewizorów. Regulacja drzwi, wymiana zamków.</p>
+<div class="service-price">od 80 zł</div>
+<div class="service-price-note">w zależności od zakresu</div>
+</article>
+</div>
+</div>
+</section>
+
+<section id="realizacje">
+<div class="container">
+<div class="section-header">
+<div class="section-eyebrow">Portfolio</div>
+<h2 class="section-title">Wybrane realizacje</h2>
+<p class="section-desc">Zdjęcia z ostatnich zleceń — od drobnych napraw po kompleksowe wykończenia mieszkań w Łodzi i okolicach.</p>
+</div>
+<div class="gallery-grid">
+<div class="gallery-item">
+<img src="/spec-zlota-raczka-24h-elektryka-hydraulika-lodz-lodz/foto-1.jpg" alt="Pomieszczenie w trakcie remontu z widocznymi materiałami budowlanymi i drabiną" loading="lazy">
+</div>
+<div class="gallery-item">
+<img src="/spec-zlota-raczka-24h-elektryka-hydraulika-lodz-lodz/foto-2.jpg" alt="Pracownicy w kaskach ochronnych podczas prac budowlanych" loading="lazy">
+</div>
+<div class="gallery-item">
+<img src="/spec-zlota-raczka-24h-elektryka-hydraulika-lodz-lodz/foto-3.jpg" alt="Etap surowy remontu z odsłoniętymi ścianami ceglanymi" loading="lazy">
+</div>
+</div>
+</div>
+</section>
+
+<section id="opinie" class="reviews">
+<div class="container">
+<div class="section-header">
+<div class="section-eyebrow">Opinie klientów</div>
+<h2 class="section-title">Oceny z Google</h2>
+<p class="section-desc">Każda pozytywna opinia to dla mnie motywacja do dalszej, rzetelnej pracy.</p>
+</div>
+<div class="rating-summary">
+<div class="rating-number">5.0</div>
+<div class="rating-stars" aria-label="5 gwiazdek na 5">★★★★★</div>
+<div class="rating-count">Na podstawie 3 opinii w Google</div>
+</div>
+<div class="reviews-grid">
+<article class="review-card">
+<div class="review-stars" aria-label="5 gwiazdek">★★★★★</div>
+<p class="review-text">„Przyszedł tego samego dnia, szybko znalazł problem z instalacją elektryczną i naprawił. Ceny uczciwe, polecam każdemu w Łodzi."</p>
+<p class="review-author">— Marek K.</p>
+</article>
+<article class="review-card">
+<div class="review-stars" aria-label="5 gwiazdek">★★★★★</div>
+<p class="review-text">„Remontowaliśmy łazienkę — Pan Michał zrobił wszystko od A do Z. Hydraulika, elektryka, panele. Solidnie i w terminie."</p>
+<p class="review-author">— Anna W.</p>
+</article>
+<article class="review-card">
+<div class="review-stars" aria-label="5 gwiazdek">★★★★★</div>
+<p class="review-text">„Awaria pralki w sobotni wieczór. Przyjechał, zdiagnozował, miał ze sobą część. Po godzinie pranie działało. Profesjonalista!"</p>
+<p class="review-author">— Tomasz S.</p>
+</article>
+</div>
+</div>
+</section>
+
+<section id="kontakt" class="section-alt">
+<div class="container">
+<div class="section-header">
+<h2 class="section-title">Skontaktuj się</h2>
+<p class="section-desc">Zadzwoń lub napisz SMS — odpowiadam szybko. Wyceniam po oględzinach lub na podstawie zdjęć.</p>
+</div>
+<div class="contact-wrapper">
+<div class="contact-info">
+<h3>SPEC — Złota Rączka 24h</h3>
+<div class="contact-items">
+<div class="contact-item">
+<div class="contact-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.36 11.36 0 004.41.89 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.89 4.41 1 1 0 01-.27 1.11l-2.2 2.2z"/>
+</svg>
+</div>
+<div class="contact-details">
+<strong>Telefon</strong>
+<a href="tel:+48790465427">+48 790 465 427</a>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+</svg>
+</div>
+<div class="contact-details">
+<strong>Obszar działania</strong>
+<span>Łódź i okolice (promień 30 km)</span>
+</div>
+</div>
+<div class="contact-item">
+<div class="contact-icon">
+<svg viewBox="0 0 24 24" aria-hidden="true">
+<path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+</svg>
+</div>
+<div class="contact-details">
+<strong>Dostępność</strong>
+<span>Pn–Pt: 7:00–20:00<br>Sb–Nd: 8:00–18:00<br>Awarie: 24/7</span>
+</div>
+</div>
+</div>
+<a href="tel:+48790465427" class="btn btn-primary">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27 11.36 11.36 0 004.41.89 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.36 11.36 0 00.89 4.41 1 1 0 01-.27 1.11l-2.2 2.2z"/>
+</svg>
+Zadzwoń: 790 465 427
+</a>
+</div>
+<div>
+<div class="map-container">
+<iframe src="https://maps.google.com/maps?q=%C5%81%C3%B3d%C5%BA&output=embed" loading="lazy" title="Mapa dojazdu — SPEC Złota Rączka 24h, Łódź" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<a href="https://www.google.com/maps/search/?api=1&query=%C5%81%C3%B3d%C5%BA" class="map-link" target="_blank" rel="noopener">
+Otwórz w Google Maps
+<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+<path d="M19 19H5V5h7V3H5c-1.11 0-2 .9-2 2v14c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2v-7h-2v7zM14 3v2h3.59l-9.83 9.83 1.41 1.41L19 6.41V10h2V3h-7z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "GeneralContractor",
+  "name": "SPEC - Złota Rączka 24h",
+  "description": "Profesjonalna złota rączka w Łodzi. Elektryka, hydraulika, remonty, serwis AGD. Dostępność 24/7.",
+  "telephone": "+48790465427",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Łódź",
+    "addressCountry": "PL"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Łódź"
+  },
+  "priceRange": "80-200 PLN",
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "07:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday", "Sunday"],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "3"
+  }
+}
+</script>
+
+<script>
+(function() {
+'use strict';
+
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+
+if (menuToggle && nav) {
+  menuToggle.addEventListener('click', function() {
+    const isOpen = nav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  document.querySelectorAll('nav a').forEach(function(link) {
+    link.addEventListener('click', function() {
+      nav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+  anchor.addEventListener('click', function(e) {
+    const targetId = this.getAttribute('href');
+    if (targetId.length > 1) {
+      const target = document.querySelector(targetId);
+      if (target) {
+        e.preventDefault();
+        const offsetTop = target.getBoundingClientRect().top + window.pageYOffset - 80;
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    }
+  });
+});
+
+})();
+</script>
+
+<footer class="ws-legal-footer">
+  <p class="ws-legal-copy">&copy; 2026 SPEC -ZLOTA RACZKA 24h, Elektryka,hydraulika, Łódź.. Wszelkie prawa zastrzeżone.</p>
+  <nav class="ws-legal-links" aria-label="Informacje prawne">
+    <a href="#" data-ws-open="ws-privacy">Polityka prywatności</a>
+    <a href="#" data-ws-open="ws-cookies">Polityka cookies</a>
+  </nav>
+</footer>
+<div class="ws-legal-modal" id="ws-privacy" role="dialog" aria-modal="true" aria-labelledby="ws-privacy-title" hidden>
+  <div class="ws-legal-dialog" tabindex="-1">
+    <button type="button" class="ws-legal-close" data-ws-close aria-label="Zamknij">&times;</button>
+    <h2 id="ws-privacy-title">Polityka prywatności</h2>
+    <p>Niniejsza polityka opisuje zasady przetwarzania danych osobowych osób, które kontaktują się z firmą <strong>SPEC -ZLOTA RACZKA 24h, Elektryka,hydraulika, Łódź.</strong>, zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 (RODO).</p>
+
+    <h3>1. Administrator danych</h3>
+    <p>Administratorem danych osobowych jest SPEC -ZLOTA RACZKA 24h, Elektryka,hydraulika, Łódź. (tel. <a href="tel:+48790465427">+48790465427</a>).</p>
+
+    <h3>2. Zakres i cel przetwarzania</h3>
+    <p>Przetwarzamy dane, które przekazują nam Państwo dobrowolnie podczas kontaktu (np. imię, numer telefonu oraz treść zapytania). Dane wykorzystujemy wyłącznie w celu udzielenia odpowiedzi na zapytanie, przedstawienia oferty oraz obsługi sprawy, której zapytanie dotyczy.</p>
+
+    <h3>3. Podstawa prawna</h3>
+    <p>Podstawą przetwarzania jest art. 6 ust. 1 lit. a RODO (zgoda wyrażona poprzez kontakt) oraz art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes administratora polegający na obsłudze zapytań i prowadzeniu korespondencji).</p>
+
+    <h3>4. Dobrowolność podania danych</h3>
+    <p>Podanie danych jest dobrowolne, jednak niezbędne do nawiązania kontaktu i udzielenia odpowiedzi.</p>
+
+    <h3>5. Okres przechowywania</h3>
+    <p>Dane przechowujemy przez czas niezbędny do obsługi zapytania i prowadzenia korespondencji, a po jego zakończeniu — do czasu przedawnienia ewentualnych roszczeń lub do momentu wycofania zgody.</p>
+
+    <h3>6. Odbiorcy danych i mapa Google</h3>
+    <p>Dane przekazane nam bezpośrednio (np. w rozmowie telefonicznej) nie są sprzedawane ani udostępniane podmiotom trzecim w celach marketingowych; mogą być powierzone wyłącznie podmiotom wspierającym działanie firmy (np. dostawcy hostingu) na podstawie umów powierzenia.</p>
+    <p>Strona zawiera osadzoną mapę dojazdu dostarczaną przez Google (Google Ireland Limited). Po jej załadowaniu Google, jako niezależny administrator, może przetwarzać dane techniczne (np. adres IP) zgodnie z <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">polityką prywatności Google</a>, w tym poza Europejskim Obszarem Gospodarczym na podstawie odpowiednich zabezpieczeń.</p>
+
+    <h3>7. Prawa osoby, której dane dotyczą</h3>
+    <p>Przysługuje Państwu prawo do:</p>
+    <ul>
+      <li>dostępu do danych oraz otrzymania ich kopii,</li>
+      <li>sprostowania (poprawienia) danych,</li>
+      <li>usunięcia danych,</li>
+      <li>ograniczenia przetwarzania,</li>
+      <li>wniesienia sprzeciwu wobec przetwarzania,</li>
+      <li>przenoszenia danych,</li>
+      <li>wycofania zgody w dowolnym momencie (bez wpływu na zgodność z prawem przetwarzania sprzed wycofania),</li>
+      <li>wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych (ul. Stawki 2, 00-193 Warszawa).</li>
+    </ul>
+
+    <h3>8. Zautomatyzowane decyzje i profilowanie</h3>
+    <p>Dane nie są wykorzystywane do zautomatyzowanego podejmowania decyzji ani do profilowania.</p>
+
+    <h3>9. Pliki cookies</h3>
+    <p>Zasady korzystania z plików cookies opisuje odrębna <a href="#" data-ws-open="ws-cookies">Polityka cookies</a>.</p>
+  </div>
+</div>
+<div class="ws-legal-modal" id="ws-cookies" role="dialog" aria-modal="true" aria-labelledby="ws-cookies-title" hidden>
+  <div class="ws-legal-dialog" tabindex="-1">
+    <button type="button" class="ws-legal-close" data-ws-close aria-label="Zamknij">&times;</button>
+    <h2 id="ws-cookies-title">Polityka cookies</h2>
+    <p>Niniejsza strona firmy <strong>SPEC -ZLOTA RACZKA 24h, Elektryka,hydraulika, Łódź.</strong> korzysta z plików cookies oraz pamięci lokalnej przeglądarki w ograniczonym, niezbędnym zakresie.</p>
+
+    <h3>1. Czym są pliki cookies</h3>
+    <p>Pliki cookies to niewielkie informacje tekstowe zapisywane przez przeglądarkę na urządzeniu użytkownika. Mogą być odczytywane przy kolejnych odwiedzinach strony.</p>
+
+    <h3>2. Pliki własne</h3>
+    <p>Stosujemy wyłącznie <strong>niezbędne i funkcjonalne</strong> mechanizmy własne — w pamięci lokalnej (localStorage) zapisujemy jedynie informację o Państwa decyzji dotyczącej zgody, aby nie wyświetlać komunikatu ponownie. Nie używamy własnych plików cookies analitycznych ani marketingowych i nie śledzimy aktywności użytkowników.</p>
+
+    <h3>3. Mapa Google (treści podmiotu trzeciego)</h3>
+    <p>W sekcji kontaktowej osadzona jest mapa dojazdu dostarczana przez Google (usługa Google Maps). Po jej załadowaniu Google może zapisywać własne pliki cookies i przetwarzać dane (np. adres IP) zgodnie z <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">polityką prywatności Google</a>. Nie mamy wpływu na te pliki — można nimi zarządzać w ustawieniach przeglądarki.</p>
+
+    <h3>4. Zarządzanie cookies</h3>
+    <p>W każdej chwili mogą Państwo zarządzać plikami cookies i pamięcią lokalną z poziomu ustawień przeglądarki — w tym je przeglądać, blokować lub usuwać. Sposób różni się w zależności od przeglądarki (Chrome, Firefox, Safari, Edge); odpowiednie instrukcje znajdują się w jej dokumentacji.</p>
+
+    <h3>5. Wycofanie zgody</h3>
+    <p>Wyczyszczenie danych witryny w przeglądarce usunie zapamiętaną decyzję — komunikat o zgodzie pojawi się przy kolejnej wizycie.</p>
+  </div>
+</div>
+<div class="ws-cookie-banner" id="ws-cookie-banner" role="dialog" aria-live="polite" aria-label="Informacja o plikach cookies">
+  <p class="ws-cookie-text">Ta strona zapisuje niezbędne dane techniczne, aby zapamiętać Twoją decyzję, oraz osadza mapę Google (która może używać własnych cookies). Nie stosujemy własnych cookies analitycznych ani marketingowych. Szczegóły w <a href="#" data-ws-open="ws-cookies">Polityce cookies</a>.</p>
+  <div class="ws-cookie-actions">
+    <button type="button" class="ws-btn ws-btn-ghost" data-ws-consent="essential">Tylko niezbędne</button>
+    <button type="button" class="ws-btn ws-btn-primary" data-ws-consent="all">Akceptuję</button>
+  </div>
+</div>
+<script>
+(function(){
+  var KEY="ws-cookie-consent";
+  var banner=document.getElementById("ws-cookie-banner");
+  function dismiss(v){try{localStorage.setItem(KEY,v);}catch(e){}if(banner)banner.hidden=true;}
+  try{if(localStorage.getItem(KEY)&&banner)banner.hidden=true;}catch(e){}
+  document.querySelectorAll("[data-ws-consent]").forEach(function(b){
+    b.addEventListener("click",function(){dismiss(b.getAttribute("data-ws-consent"));});
+  });
+  var lastFocus=null;
+  function openModal(id){var m=document.getElementById(id);if(!m)return;lastFocus=document.activeElement;m.hidden=false;document.body.style.overflow="hidden";var d=m.querySelector(".ws-legal-dialog");if(d)d.focus();}
+  function closeModal(m){m.hidden=true;document.body.style.overflow="";if(lastFocus&&lastFocus.focus)lastFocus.focus();}
+  document.querySelectorAll("[data-ws-open]").forEach(function(t){
+    t.addEventListener("click",function(e){e.preventDefault();openModal(t.getAttribute("data-ws-open"));});
+  });
+  document.querySelectorAll(".ws-legal-modal").forEach(function(m){
+    m.addEventListener("click",function(e){if(e.target===m)closeModal(m);});
+    m.querySelectorAll("[data-ws-close]").forEach(function(x){x.addEventListener("click",function(){closeModal(m);});});
+  });
+  document.addEventListener("keydown",function(e){
+    if(e.key==="Escape"){document.querySelectorAll(".ws-legal-modal").forEach(function(m){if(!m.hidden)closeModal(m);});}
+  });
+})();
+</script>
+</body>
+</html>
